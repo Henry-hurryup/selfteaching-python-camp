@@ -47,6 +47,8 @@ text4 = []
 for w in text3:
     if w.find("ea") < 0:
         text4.append(w)
+# # 列表推导式写法——
+# text4 = [w for w in text3 if w.find('ea')<0]
 
 # 把 text4 拼接成 text5，并去掉多余的空格
 text5 = "".join(text4)

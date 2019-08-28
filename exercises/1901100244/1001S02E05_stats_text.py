@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-# Filename : 1001S02E05_string.py
+# Filename : 1001S02E05_stats_text.py
 # author by : @shen-huang
 
 # 词频统计

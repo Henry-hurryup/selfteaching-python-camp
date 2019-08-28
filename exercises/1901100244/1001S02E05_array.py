@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-# Filename : 1001S02E05_string.py
+# Filename : 1001S02E05_array.py
 # author by : @shen-huang
 
 # 数组操作，进制转换

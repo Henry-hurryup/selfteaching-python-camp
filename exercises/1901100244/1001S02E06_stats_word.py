@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-# Filename : 1001S02E05_string.py
+# Filename : 1001S02E06_stats_word
 # author by : @shen-huang
 
 # 函数的用法
