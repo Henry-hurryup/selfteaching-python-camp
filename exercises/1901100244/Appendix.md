@@ -81,6 +81,11 @@ VS Code 强大的一点是其可以安装大量的插件，安装方法是：
   而且 GitHub 为了安全，其上展示的 Markdown 文档中的 HTML 格式标签和 CSS 样式都会被去除。我曾经试着用“内联式 CSS 样式”和“HTML 格式标签”设定字体字号、设定文字颜色、添加下划线、控制换行等等，在 VS Code 里渲染没有问题，贴到 GitHub 里就都不见了。  
   这个问题网上也有不少讨论，比如在《》⸺在 GitHub 上，你想给文字加个特定颜色的高亮，都没有正常途径。  
   可能 GitHub 是这么想的：我们都把表情符号给你们了，就别把文档涂得花花绿绿了吧？
+- **GitHub 不支持的一些 Markdown 语法**  
+  - 下划线
+  - 删除线
+  - 强调
+  - 脚注
 - **通过 GitHub 提供的预览（Preview）明确显示效果**  
   我们通常都是在
 
@@ -116,6 +121,12 @@ Unicode 字符
 
 ##### 表格
 
+##### 转换
+
+Markdown 与其他格式的转换
+[Markdown 格式如何转换成 Word？](https://www.zhihu.com/question/22972843)
+Pandoc
+Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册中的文本总会出现重复的字”）
 
 ### 3. 参考文献
 
@@ -130,10 +141,118 @@ Unicode 字符
   - [Working with advanced formatting](https://help.github.com/en/articles/working-with-advanced-formatting)
 - [学习 Markdown](http://amwiki.org/doc/?file=020-教程学习篇/005-学习markdown/01-Markdown快速开始)
 - [了不起的 Markdown](https://www.amazon.cn/dp/B07W2ZN8TM)
-- [反思 Markdown：Markdown 的长与短](https://sspai.com/post/37340)
+- [反思 Markdown：Markdown 的长与短](https://sspai.com/post/37340)  
+- [Markdown 格式如何转换成 Word？](https://www.zhihu.com/question/22972843)
+- [Markdown, Please! 将任意网页转换为 Markdown 格式](https://www.appinn.com/markdown-please/)  
 - [Org-mode、reST、 Markdown 各有什么优缺点？](https://www.zhihu.com/question/19851600)
 - [神器 Org-mode](https://www.lijigang.com/blog/2018/08/08/神器-org-mode/)
 - [一个博士生是怎么应用 Org-mode 的](https://github.com/lujun9972/emacs-document/blob/master/org-mode/一个博士生是怎么应用Org-mode的.org)
+
+## 软件、应用、程序、网站（Windows 平台）
+
+为了正常访问 GitHub、Google 等网站，应该**避免安装中国大陆地区的各类“安全软件”、“浏览器”甚至“全家桶”**，为此，我觉得相应地提供一些细节上的建议是有必要的。由于个人主要使用 Windows 系统，所以本部分内容以 Windows 平台为主。
+
+按使用类型分类，给出必装（★★★★★）、推荐（★★★★）、可用（★★★）、一般（★★）、回避（★）、禁绝（☆）六个级别的评价。
+
+### 系统
+
+- 安全防护
+  - Defender ★★★★★
+  - 火绒 ★★
+  - 腾讯电脑管家 ★
+  - 360 杀毒 ☆
+  - 360 安全卫士 ☆
+  - 金山毒霸 ☆
+  - 金山卫士 ☆
+  - 2345安全卫士 ☆
+- 压缩
+  - 7-Zip ★★★★
+  - Bandizip ★★★★
+  - WinRAR ★★★
+  - 2345 好压 ☆
+  - 快压 ☆
+  - 360 压缩 ☆
+- 输入法
+  - 微软拼音输入法 ★★★★
+  - 谷歌拼音输入法 ★★★
+  - Rime 输入法 ★★★
+  - 极点五笔输入法 ★★★
+  - 黑马神拼输入法 ★★
+  - 华宇拼音输入法 ★★
+  - 拼音加加输入法 ★
+  - 搜狗输入法 ★
+  - QQ 输入法 ★
+  - 百度输入法 ☆
+  - 2345王牌输入法 ☆
+  - 手心输入法 ☆
+  - 极品五笔输入法 ☆
+- 驱动
+  - 驱动精灵 ☆
+  - 驱动人生 ☆
+  - 鲁大师 ☆
+
+### 网络
+
+- 浏览器  
+  - Firefox
+  - Chrome
+  - Chromium 系
+    - Vivaldi ★★★★★
+    - Edge (based on Chromium) ★★★★
+    - 百分浏览器 ★★★
+    - 115 浏览器 ★★
+    - Opera ☆
+  - Edge ★★
+  - Internet Explorer ★
+  - 多引擎  
+    通常是同时使用 Chromium 的 Blink（或 WebKit）排版引擎，和 Internet Explorer 的 Trident 排版引擎。
+    - Avant 浏览器 ★★★
+    - 傲游浏览器（Maxthon） ★
+    - 搜狗浏览器 ☆
+    - QQ 浏览器 ☆
+    - 360 安全浏览器 ☆
+    - 360 极速浏览器 ☆
+    - UC 浏览器 ☆
+    - 猎豹安全浏览器 ☆
+    - 2345 加速浏览器 ☆
+  - 浏览器插件和扩展
+    - [MyChrome](https://github.com/cnjackchen/my-chrome) ★★★★★
+    - [MyFirefox](https://github.com/cnjackchen/my-firefox) ★★★★★
+    - Flash ★
+- 下载
+  - Internet Download Manager ★★★★
+
+### 工作
+
+- 套装
+  - Microsoft Office 365 ★★★★★
+  - Microsoft Office 2019 ★★★★
+  - WPS Office ★
+
+### 媒体
+
+- 视频
+- 音频
+- 图片
+  - ImageGlass ★★★★★
+  - IrfanView ★★★★
+  - XView ★★★
+  - 2345 看图王 ☆
+
+### 学习
+
+### 娱乐
+
+参考资料：  
+[我最喜欢的软件 Windows 版 - 小众软件](https://love.appinn.com/)  
+[精品绿色便携软件](https://www.portablesoft.org/)  
+[善用佳软](https://xbeta.info/)  
+[浏览器 user-agent 字符串的故事](https://www.cnblogs.com/ifantastic/p/3481231.html)  
+[History of the browser user-agent string](https://webaim.org/blog/user-agent-string-history/)  
+[List of User Agents](https://developers.whatismybrowser.com/useragents/explore/)  
+[网页浏览器列表](https://zh.wikipedia.org/wiki/网页浏览器列表)  
+[HTML5 test](http://HTML5test.com/)  
+[如何评价2345？](https://www.zhihu.com/question/35188509)
 
 ## 吐槽（？）
 
@@ -245,20 +364,38 @@ Unicode 字符
   - GitHub 创建空文件夹
   - GitHub 安装 git
   - Pull Request
-- **Anaconda**
+  - GitHub fork 同步
+  - fetch 分支
+  - GitHub Desktop fork 更新
+  - GitHub README.md image
+  - 把 GitHub 当图床
+  - GitHub Pull Request 撤回
+  - GitHub 下载后同步
+  - GitHub Issue 添加标签
+  - GitHub 使用 Org-mode
+  - GitHub 使用 reST
+  - GitHub md 格式切换
+  - GitHub 可用的文本格式
+- **Anaconda 相关**
   - Anaconda
   - Anaconda 2 3 关系
   - Anaconda 安装 git
   - Anaconda PATH 设定
   - Anaconda Python module path
   - Anaconda Scripts Folder
-- **Python**
+  - conda 代理
+  - conda 代理 InvalidTypeError: Parameter proxy_servers
+  - pip Windows Proxy
+  - the ssl module in Python is not available
+  - pip trusted-host
+- **Python 相关**
   - Python Hello World
   - Python 输入参数
   - Python input
   - Python Calculator
   - Python print 格式化
   - Python 注释
+  - Python 计算器
   - Python eval
   - Python eval math
   - ast.literal_eval
@@ -289,8 +426,39 @@ Unicode 字符
   - Python 正则表达式 空格
   - Python 去掉集合中的空格
   - Python 去掉 list 中元素里的空格
-  - Python 
-- **Markdown**
+  - Python 字符串 大小写转换
+  - Python 字符串 大小写翻转
+  - Python swapcase
+  - Python 2.7 UTF-8
+  - Python import
+  - Python import 大括号
+  - Python 大括号
+  - Python break
+  - Python continue
+  - 正则表达式 汉字 全角符号
+  - 正则表达式 不区分大小写
+  - Python 修改字典的 key
+  - Python dict.pop
+  - Python dict["c"] = dict.pop["a"]
+  - Python 字典 输出 格式
+  - Python 正则表达式 寻找
+  - Python 字符 查询 Unicode
+  - Python encode decode
+  - Python encode decode unicode escape
+  - Python 3 decode unicode
+  - Python 列表 合并
+  - Python 列表推导式
+- **Windows 系统相关**
+  - 右键 加入 命令提示符
+  - py 命令无法运行
+  - py -3 --version
+  - Windows 命令提示符 命令
+  - CMD 命令速查手册
+- **其他系统相关**
+  - Linux 命令提示符
+  - Linux Shell
+  - Linux bash
+- **Markdown 相关**
   - Markdown
   - Typora
   - LaTeX
@@ -302,10 +470,48 @@ Unicode 字符
   - Markdown 多级有序列表
   - Markdown 代码块 斜体
   - Markdown 代码块 HTML
+  - Org-mode
+  - Markdown 对比
+  - \# -\*- coding: UTF-8 -\*-
+  - Markdown 内嵌 CSS
+  - Markdown 使用 CSS
+  - Markdown 自定义 CSS
+  - 李笑来 CSS
+  - HTML 内嵌 CSS
+  - GitHub Markdown CSS
+  - GitHub Markdown CSS 使用
+  - GitHub Markdown color
+  - GitHub Markdown underline
+  - Markdown 着重号
+  - Markdown 代码高亮
+  - Markdown 不间断空格
+  - 零宽空格
+  - HTML 着重号
+  - HTML 格式化
+  - HTML 字体颜色
+  - HTML font
+  - CSS 着重号
+  - CSS 颜色名称
+  - CSS 内联
+  - Markdown 图片大小
+  - HTML img 标签
 - **VS Code**
   - VS Code 字体设置
   - VS Code Python 调试
   - VS Code 纵向选择
+  - VS Code Markdown
+- **Jupyter 相关**
+  - Jupyter 用特定浏览器
+  - Jupyter Anaconda 无法启动
+- **浏览器相关**
+  - Kinza 浏览器
+  - Kinza 自定义文件夹
+  - Kinza portable
+  - Chromium
+  - SRWare Iron folder
+  - SRWare Iron install folder
+  - SRWare Iron install path
+  - Eversync
 - **其他**
   - selfteaching
   - 自学是一种社交
@@ -320,3 +526,38 @@ Unicode 字符
   - Hello World
   - The Zen of Python, by Tim Peters
   - 今日割五城，明日割十城，然后得一夕安寝。起视四境，而秦兵又至矣。
+  - 目标 用词 掌握 了解 认知 识别
+  - PDF 阅读器
+  - 撇号 英文 使用
+  - Apostrophe 字体
+  - Unicode 2019
+  - Apostrophe Unicode 2019 宽度
+  - CodeSandbox
+  - UNPKG
+  - build 软件
+  - build software
+  - 中文 首行空两格 段间空一行
+  - 自然段开头空两格
+  - 首行缩进 排版 规范
+  - 首行缩进 国家标准
+  - PDF 复制 多字
+  - Kangxi Radicals
+  - Kangxi Radicals unicode
+  - CJK Compatibility Ideographs
+  - CJK Radicals Supplement
+  - Python 字符 整数值
+  - ⾏行行
+  - Unicode 编码表
+  - A Google a day
+  - 不可能三角
+  - Unicode 五角星
+  - 互联网档案馆
+  - Library Genesis
+  - Project Fi
+  - clowwindy
+  - 学习一个
+  - 安全评测网站
+  - AV TEST
+  - Alexa 排名 世界
+  - 不间断空格
+  - Non-breaking space

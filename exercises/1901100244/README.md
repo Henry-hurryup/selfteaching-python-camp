@@ -115,6 +115,7 @@
 
 正常访问 GitHub 和 Google 是个难点，不过班里没什么人聊这个（可能是不方便聊），不知都是怎么搞定的，推测应该是八仙过海了。
 
+<!-- 
 数年间我为此耗费了无数时间，试过的方案都有两位数了，现在多少有点心得。
 
 首先要理解的，是这类服务中，价格、速度、流量三者，最多只能同时取其二。
@@ -126,7 +127,7 @@
 这一情况，在经济学上叫“[三元悖论（Trilemma）](https://zh.wikipedia.org/wiki/三元悖论)”，也叫“不可能三角”，后来被拓展到了各种领域，进一步了解可以参考知乎这个问题：“[世界上有哪些不可能三角？](https://www.zhihu.com/question/265410886)”
 
 这个动图相对直观地表现了这一问题：  
-<!-- ![质量_价格_速度_不可能三角](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif)   -->
+<!-- ![质量_价格_速度_不可能三角](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif)   --%>
 <img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif" width="200px" alt="质量_价格_速度_不可能三角" />
 
 其次要明确的，是自己的实际需要。
@@ -163,7 +164,7 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 
 用 Shadowsocks 就会遇到选择服务商的问题，好在有位前辈专门做了相关的评测——毒药机场简介（<https://duyaoss.com/>，备用 GitHub 链接为 <https://github.com/DuyaoSS/SSR/issues/1>）。
 
-在挑选服务商方面，我现在的观点是这样：
+在具体挑选哪家服务商这点上，我现在的观点是这样的：
 
 1. 用 QQ、微信等工具做为主要服务咨询通道，甚至不提供服务咨询通道的服务商，就别用了；
 2. 需要安装不常见的私有程序的服务商，就别用了；
@@ -175,48 +176,61 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 8. 遇到天灾人祸跑路了，不必介怀，这属于国难；
 9. 目的是使用完整的互联网，不要为路径耗费太多时间和精力。
 
-:heavy_exclamation_mark: 还需要强调的一点是，科学上网的计算机（特别是 Windows 系统的），不要安装中国大陆地区的各类“安全软件”或“全家桶”，包括但不限于：
+:exclamation::exclamation::exclamation: 还需要强调的一点是，用于正常访问 GitHub、Google 等网站的计算机（特别是 Windows 系统的），不要安装中国大陆地区的各类“安全软件”、“浏览器”甚至“全家桶”，包括但不限于：
 
 - 360 系所有软件；
 - 百度系所有软件；
-- 金山系安全软件（其他也尽量别用）；
+- 2345 系所有软件；
+- 金山系安全软件（其他软件也尽量别用）；
 - 腾讯系安全软件。
 
-这些软件对科学上网有什么具体的影响，就不细说了。有些人可能担心安全问题，其实 Windows 10 自带的 Defender 防护能力非常强，在 [2019 年 6 月的 AV-TEST 评测](https://www.av-test.org/en/antivirus/home-windows/)上，Defender 已经成为“顶级产品”了，所以一般使用是不必另外安装安全软件的。
+这些软件对上网有什么具体的影响，就不细说了。有些人可能担心安全问题，其实 Windows 10 自带的 Defender 防护能力非常强，在 [2019 年 6 月的 AV-TEST 评测](https://www.av-test.org/en/antivirus/home-windows/)上，Defender 已经成为“顶级产品”了，所以一般使用是不必另外安装安全软件的。
 
 其他参考资料：  
-[科学上网相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
+<!-- [科学上网相关知识总结](https://crifan.github.io/scientific_network_summary/website/)   --%>
+[相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
 [Shadowsocks 的前世后生](http://www.chinagfw.org/2016/08/shadowsocks_31.html)  
 [clowwindy 关于 Shadowsocks 的交流 Issue #293](https://github.com/shadowsocks/shadowsocks-windows/issues/293)  
 [鲁迅都救不了，几个程序员就能救了？](https://zankyo.cc/1033/)  
-[百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)（中国新闻网的这篇稿有高级黑的感觉）
+[Google 百度和谷歌的那些事](http://blog.devep.net/virushuo/2010/01/14/blog56google_blogtinyfool_1_go.html)  
+<!-- [百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)（中国新闻网的这篇稿有高级黑的感觉） --%>
+[百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)
 [谷歌 Play 商店允许中国开发者销售付费应用](http://game.people.com.cn/n/2014/1212/c48662-26194242.html)
 
+ -->
+ 
 #### 4.2 手册话语
 
-手册当中有大量不甚规范的表达，比如——
+手册当中有大量有待推敲的表达，比如——
 
 - 标点
   > 所谓"自学"，就是"自己一个人（默默地）学"
   - *其中引号有误*
-- 名词
+- 词语
   > 可以通过 google 翻译或找到翻译件
   > 文字排版请使用 markdown 语法
   > Github issue 区 是很好的交流场所
-  - *其中 Google、Markdown、GitHub 的拼写不规范*
+  > 电脑硬件要求：macOS 10.13以上操作系统，Windows 10 64位操作系统
+  - *其中 Google、Markdown、GitHub 的拼写不规范，“硬件要求”应为“系统要求”*
 - 病句
   > 训练营由 "新生大学" 发起，针对基础相对薄弱，想要自学 Python 的人组织的训练营。
   > 教研组由李笑来担任组长，帮大家形成以开放的互联网为师，习得自学这门手艺。
   - *这两句话都有成分残缺或赘余的问题*
 
-还有很多同类情况，就不一一列举了。
+还有很多编校方面的其他情况，就不一一列举了。
 
-这类问题在阅读时会给人“磕磕绊绊”的感觉，或许很多人并不在意这些细节，但这些细节会从一个侧面体现出主办方的水平，故而也不应轻慢。
+<!-- 这类问题在阅读时会给人“磕磕绊绊”的感觉，或许很多人并不在意这些细节，但这些细节会从一个侧面体现出主办方的水平，故而也不应轻慢。 -->
+这类问题在阅读时会给人“磕磕绊绊”的感觉，有的时候甚至影响到对内容的理解。不过，通过互联网自学，会接触到大量不算规范的语言文字表达，很多时候把注意力放在领会文意、解决问题上，价值更高些。
+
+参考资料：  
+
 
 #### 总结
 
-- [x] 科学上网问题已解决
-- [ ] 文字问题应整体编修（本条后文不列）
+<!-- - [x] 科学上网问题已解决 -->
+- [x] 上网问题已解决
+<!--- [ ] 文字问题应整体编修（本条后文不列） -->
+- [ ] 文字应整体编修
 
 ------
 
