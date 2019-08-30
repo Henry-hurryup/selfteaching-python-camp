@@ -184,7 +184,8 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 - 金山系安全软件（其他软件也尽量别用）；
 - 腾讯系安全软件。
 
-<!-- 这些软件对上网有什么具体的影响，就不细说了。 -->有些人可能担心安全问题，其实 Windows 10 自带的 Defender 防护能力非常强，在 [2019 年 6 月的 AV-TEST 评测](https://www.av-test.org/en/antivirus/home-windows/)上，Defender 已经成为“顶级产品”了，所以一般使用是不必另外安装安全软件的。
+<!-- 这些软件对上网有什么具体的影响，就不细说了。 -->
+有些人可能担心安全问题，其实 Windows 10 自带的 Defender 防护能力非常强，在 [2019 年 6 月的 AV-TEST 评测](https://www.av-test.org/en/antivirus/home-windows/)上，Defender 已经成为“顶级产品”了，所以一般使用是不必另外安装安全软件的。
 
 参考资料：  
 <!-- [科学上网相关知识总结](https://crifan.github.io/scientific_network_summary/website/)   -->
