@@ -175,8 +175,8 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 7. 比较熟悉的大牌服务商搞活动，可以谨慎购买；
 8. 遇到天灾人祸跑路了，不必介怀，这属于国难；
 9. 目的是使用完整的互联网，不要为路径耗费太多时间和精力。
-
-:exclamation::exclamation::exclamation: 还需要强调的一点是，用于正常访问 GitHub、Google 等网站的计算机（特别是 Windows 系统的），不要安装中国大陆地区的各类“安全软件”、“浏览器”甚至“全家桶”，包括但不限于：
+-->
+:exclamation::exclamation::exclamation: 据我所知，用于正常访问 GitHub、Google 等网站的计算机（特别是 Windows 系统的），应该**避免**安装中国大陆地区的各类“安全软件”、“浏览器”甚至“全家桶”，包括但不限于：
 
 - 360 系所有软件；
 - 百度系所有软件；
@@ -184,20 +184,19 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 - 金山系安全软件（其他软件也尽量别用）；
 - 腾讯系安全软件。
 
-这些软件对上网有什么具体的影响，就不细说了。有些人可能担心安全问题，其实 Windows 10 自带的 Defender 防护能力非常强，在 [2019 年 6 月的 AV-TEST 评测](https://www.av-test.org/en/antivirus/home-windows/)上，Defender 已经成为“顶级产品”了，所以一般使用是不必另外安装安全软件的。
+<!-- 这些软件对上网有什么具体的影响，就不细说了。 -->有些人可能担心安全问题，其实 Windows 10 自带的 Defender 防护能力非常强，在 [2019 年 6 月的 AV-TEST 评测](https://www.av-test.org/en/antivirus/home-windows/)上，Defender 已经成为“顶级产品”了，所以一般使用是不必另外安装安全软件的。
 
-其他参考资料：  
-<!-- [科学上网相关知识总结](https://crifan.github.io/scientific_network_summary/website/)   --%>
+参考资料：  
+<!-- [科学上网相关知识总结](https://crifan.github.io/scientific_network_summary/website/)   -->
 [相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
+<!--
 [Shadowsocks 的前世后生](http://www.chinagfw.org/2016/08/shadowsocks_31.html)  
 [clowwindy 关于 Shadowsocks 的交流 Issue #293](https://github.com/shadowsocks/shadowsocks-windows/issues/293)  
-[鲁迅都救不了，几个程序员就能救了？](https://zankyo.cc/1033/)  
+[鲁迅都救不了，几个程序员就能救了？](https://zankyo.cc/1033/)  -->
 [Google 百度和谷歌的那些事](http://blog.devep.net/virushuo/2010/01/14/blog56google_blogtinyfool_1_go.html)  
-<!-- [百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)（中国新闻网的这篇稿有高级黑的感觉） --%>
+<!-- [百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)（中国新闻网的这篇稿有高级黑的感觉） -->
 [百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)
 [谷歌 Play 商店允许中国开发者销售付费应用](http://game.people.com.cn/n/2014/1212/c48662-26194242.html)
-
- -->
  
 #### 4.2 手册话语
 
