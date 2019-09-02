@@ -8,7 +8,7 @@
 
 简单地说，Markdown 格式就是为了给纯文本格式的文档快速地添加一些格式化标记（比如标题、粗体、斜体、引用、链接等等）所用的一种格式。Markdown 文档使用“`.md`”扩展名，其实质还是文本文档，只是把文本文档的“`.txt`”扩展名换成“`.md`”罢了。
 
-### 1. 相对完整的参考资料
+### 1. 相对完善的资料
 
 Markdown 最基础也是最核心的资料，当属由 Markdown 格式创始人[约翰·格鲁伯](https://zh.wikipedia.org/wiki/約翰·格魯伯)（[John Gruber](https://en.wikipedia.org/wiki/John_Gruber)）公布在 Markdown 项目网站（<https://daringfireball.net/projects/markdown/>）上的讯息，在项目网站上，约翰·格鲁伯给出了 [Markdown 格式的基本用法](https://daringfireball.net/projects/markdown/basics)以及[Markdown 格式的详细语法](https://daringfireball.net/projects/markdown/syntax)，他还做了一个[在线转换器](https://daringfireball.net/projects/markdown/dingus)，可以简单地把 Markdown 格式文本转换成 HTML 格式文本，同时预览浏览器显示的样子。
 
@@ -29,7 +29,7 @@ GitHub 在《[GitHub Flavored Markdown 规范](https://github.github.com/gfm/)�
 纸质版购买：[京东](https://item.jd.com/53604404106.html)、[天猫](https://detail.tmall.com/item.htm?id=599460988844)；  
 电子版购买：[亚马逊](https://www.amazon.cn/dp/B07W2ZN8TM)。
 
-### 2. 具体使用时的细节
+### 2. 使用时的细节
 
 #### 2.1. 软件配置
 
@@ -86,6 +86,8 @@ VS Code 强大的一点是其可以安装大量的插件，安装方法是：
   - 删除线
   - 强调
   - 脚注
+    - [Markdown 的注脚问题](https://segmentfault.com/q/1010000000464492)
+    - [markdown 为什么不支持目录和脚注？](https://www.zhihu.com/question/21907056)  
 - **通过 GitHub 提供的预览（Preview）明确显示效果**  
   我们通常都是在
 
@@ -115,11 +117,67 @@ Unicode 字符
   <img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif" width="200px" alt="质量_价格_速度_不可能三角" />
   注意！只能用 `<img>` 标签的属性进行设置，通过 CSS 样式是设置不了的！如 `<img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif" style="width:200px;" alt="质量_价格_速度_不可能三角" />` 这样，是不行的！
 
+在代码格式（`code`）中贴图
+`<code>...</code>` 中可以使用 Markdown 贴图语法
+
 ##### 列表
+
+可以用 Stylus 实现多级有序列表编号，Markdown 要有对应的写法，不是很好搞。
 
 ##### 代码
 
+在代码格式（`code`）中使用斜体和粗体
+
+##### 按键
+
+使用 `<kbd>...</kbd>` 可以渲染出按键的效果。
+
+如 `<kbd>![Win][Windows_Logo_12px] Win</kbd>` 显示为 <kbd>![Win][Windows_Logo_12px] Win</kbd>
+
 ##### 表格
+
+##### 注释
+
+可以使用 HTML 的注释方式 `<!--  -->`
+
+另外可以利用空链接和引用链接的方式添加注释。
+
+参见：  
+[在 Markdown 中写注释](https://www.imooc.com/article/23400)  
+[如何在 Markdown 注释一段文字](https://www.jianshu.com/p/9be87e7e15bf)  
+[syntax - Comments in Markdown - Stack Overflow](http://stackoverflow.com/questions/4823468/comments-in-markdown)  
+[如何在 Github Flavored Markdown 中添加内联注释？](https://codeday.me/bug/20190228/716555.html)
+
+##### 样式
+
+虽然 GitHub 显示 Markdown 文档的时候会把各种自定样式都去掉，但我们还是可以利用 HTML 标签配合 Stylus 插件的方式进行一些样式调整的。  
+
+GitHub 接受的 HTML 标签有：
+
+```Text
+h1 h2 h3 h4 h5 h6 h7 h8 br b i strong em a pre code img tt div ins del 
+sup sub p ol ul table thead tbody tfoot blockquote dl dt dd kbd q samp 
+var hr ruby rt rp li tr td th s strike summary details caption figure 
+figcaption abbr bdo cite dfn mark small span time wbr
+```
+
+这其中 `b` 和 `i` 基本上是不会使用的（通常使用 `strong` 和 `em`），而 `span` 本身就是用来添加样式的。故可以用 `<span><i>...</i></span>` 来标记一段文本，再用 Stylus 给 `span i` 设定格式就行了。`<span><b>...</b></span>` 按理也可以这样操作，但若是照搬 `<span><i>...</i></span>` 的 CSS 设置，会导致标记文字的粗体无法取消，我试验了 `<span><span>...</span></span>`，发现会意外地匹配上页面别的部分， `<span><span><span>...</span></span></span>` 也不好用，最后发现是 `span b` 和 `span i` 的 CSS 设置有分别，想要去掉标签原本默认的效果，`span i` 要设置 `font-style: normal; `，`span b` 则要设置 `font-weight: normal; `。如果
+
+我使用了：
+
+```CSS
+span i {font-style: normal; color: #444444; font-size: 87.5% !important;}
+span b {font-style: normal; font-weight: normal; background-color: #ffff00; }
+```
+
+[How to display HTML content in github README.md?](https://stackoverflow.com/questions/14951321/how-to-display-html-content-in-github-readme-md)  
+[sanitization_filter](https://github.com/jch/html-pipeline/blob/master/lib/html/pipeline/sanitization_filter.rb#L44-L48)  
+[HTML <span> 标签](https://www.w3school.com.cn/tags/tag_span.asp)  
+[CSS 选择器参考手册](https://www.w3school.com.cn/cssref/css_selectors.asp)  
+[CSS 的 ID 和 Class 有什么区别？如何正确使用它们？](https://www.zhihu.com/question/19550864)  
+[GitHub README 文件语法解读](https://github.com/guodongxiaren/README#diff%E8%AF%AD%E6%B3%95)
+
+##### 目录
 
 ##### 转换
 
@@ -128,7 +186,7 @@ Markdown 与其他格式的转换
 Pandoc
 Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册中的文本总会出现重复的字”）
 
-### 3. 参考文献
+### 3. 其他参考内容
 
 - [Markdown](https://daringfireball.net/projects/markdown/)
 - [Markdown: Basics](https://daringfireball.net/projects/markdown/basics)
@@ -139,6 +197,7 @@ Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册�
   - [Basic writing and formatting syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax#ignoring-markdown-formatting)
 - [使用高级格式](https://help.github.com/cn/articles/working-with-advanced-formatting)
   - [Working with advanced formatting](https://help.github.com/en/articles/working-with-advanced-formatting)
+- [Markdown 语法指南](http://www.ghostchina.com/markdown-guide/)  
 - [学习 Markdown](http://amwiki.org/doc/?file=020-教程学习篇/005-学习markdown/01-Markdown快速开始)
 - [了不起的 Markdown](https://www.amazon.cn/dp/B07W2ZN8TM)
 - [反思 Markdown：Markdown 的长与短](https://sspai.com/post/37340)  
@@ -147,6 +206,57 @@ Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册�
 - [Org-mode、reST、 Markdown 各有什么优缺点？](https://www.zhihu.com/question/19851600)
 - [神器 Org-mode](https://www.lijigang.com/blog/2018/08/08/神器-org-mode/)
 - [一个博士生是怎么应用 Org-mode 的](https://github.com/lujun9972/emacs-document/blob/master/org-mode/一个博士生是怎么应用Org-mode的.org)
+
+## 常见图片格式
+
+### 1. 图片显示的原理
+
+### 2. 图片格式分类
+
+#### 2.1. 按画质损失情况分类
+
+#### 2.2. 按内容构建方式分类
+
+### 3. 常见图片格式
+
+## 命令行相关信息
+
+### 1. 历史
+
+CLI 和 GUI 的历史沿革。
+
+### 2. 使用
+
+#### 2.1. 计算机主要操作系统所带的命令行类工具
+
+#### 2.2. Windows
+
+##### 2.2.1. 命令提示符
+
+###### 2.2.1.1. 进入
+
+可以通过如下几种方式进入命令提示符（任选其一）：
+
+- 依次点击【![Win][Windows_Logo_12px] 开始】-【Windows 系统】-【命令提示符】
+- 点击【![Win][Windows_Logo_12px] 开始】- 输入 CMD - 按 `↵ 回车`
+- 按 <code>![Win][Windows_Logo_12px] Win</code> - 输入 CMD - 按 `↵ 回车`
+- 按 <code>![Win][Windows_Logo_12px] Win</code> + `r` - 输入 CMD - 按 `↵ 回车`
+
+
+##### 2.2.2. PowerShell
+
+#### 2.3. macOS
+
+#### 2.4. Linux
+
+#### 2.5. Chrome OS
+
+简而言之，尽量别用，相当费神。
+
+### 3. 资料
+
+[PowerShell 在线教程](https://www.pstips.net/powershell-online-tutorials)  
+[告别 Windows 终端的难看难用，从改造 PowerShell 的外观开始](https://sspai.com/post/52868)  
 
 ## 软件、应用、程序、网站（Windows 平台）
 
@@ -252,7 +362,8 @@ Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册�
 [List of User Agents](https://developers.whatismybrowser.com/useragents/explore/)  
 [网页浏览器列表](https://zh.wikipedia.org/wiki/网页浏览器列表)  
 [HTML5 test](http://HTML5test.com/)  
-[如何评价2345？](https://www.zhihu.com/question/35188509)
+[如何评价2345？](https://www.zhihu.com/question/35188509)  
+[为什么我放弃了 Chrome？](https://zhuanlan.zhihu.com/p/46205674)  
 
 ## 吐槽（？）
 
@@ -448,12 +559,14 @@ Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册�
   - Python 3 decode unicode
   - Python 列表 合并
   - Python 列表推导式
+  - 正则表达式 贪婪模式
 - **Windows 系统相关**
   - 右键 加入 命令提示符
   - py 命令无法运行
   - py -3 --version
   - Windows 命令提示符 命令
   - CMD 命令速查手册
+  - PowerShell
 - **其他系统相关**
   - Linux 命令提示符
   - Linux Shell
@@ -493,8 +606,19 @@ Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册�
   - CSS 着重号
   - CSS 颜色名称
   - CSS 内联
+  - Markdown 图片
   - Markdown 图片大小
+  - HTML 注释 嵌套
+  - HTML 注释 行内
   - HTML img 标签
+  - HTML span
+  - HTML pre
+  - CSS class id 区别
+  - CSS 选择器
+  - HTML ins
+  - CSS font style
+  - CSS 去掉 \<b\> 加粗
+  - Stylus
 - **VS Code**
   - VS Code 字体设置
   - VS Code Python 调试
@@ -512,6 +636,8 @@ Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册�
   - SRWare Iron install folder
   - SRWare Iron install path
   - Eversync
+  - Edge Chromium
+  - Chrome Better History
 - **其他**
   - selfteaching
   - 自学是一种社交
@@ -561,3 +687,11 @@ Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册�
   - Alexa 排名 世界
   - 不间断空格
   - Non-breaking space
+
+<!-- 复用的图片和链接 -->
+
+<!-- ![Win][Windows_Logo_20px]![Win][Windows_Logo_16px]![Win][Windows_Logo_12px] -->
+
+[Windows_Logo_20px]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Windows_logo_2012-Black.svg/20px-Windows_logo_2012-Black.svg.png
+[Windows_Logo_16px]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Windows_logo_2012-Black.svg/16px-Windows_logo_2012-Black.svg.png
+[Windows_Logo_12px]: https://raw.githubusercontent.com/shen-huang/img/master/Logo/Windows_logo_2012-Black_12px.svg?sanitize=true

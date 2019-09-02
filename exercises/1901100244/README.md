@@ -189,6 +189,7 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 
 参考资料：  
 [相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
+[机场简介](https://github.com/DuyaoSS/SSR/issues/1)  
 [Google 百度和谷歌的那些事](http://blog.devep.net/virushuo/2010/01/14/blog56google_blogtinyfool_1_go.html)  
 [百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)  
 [谷歌 Play 商店允许中国开发者销售付费应用](http://game.people.com.cn/n/2014/1212/c48662-26194242.html)
@@ -231,8 +232,8 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 #### 总结
 
 <!-- - [x] 科学上网问题已解决 -->
-- [x] 上网问题已解决
 <!--- [ ] 文字问题应整体编修（本条后文不列） -->
+- [x] 上网问题已解决
 - [ ] 文字应整体编修
 
 ------
@@ -260,13 +261,13 @@ GitHub 的基本使用
 1. 创建文件的操作方式在“参考资料1”中没有；
 2. 新手在尝试创建 develop.txt 时可能会漏掉“.txt”，应予强调；
 3. 底部“Commit changes”区的提交信息（a commit message）比较重要，不填写或仅依靠默认内容有可能导致无法提交，造成困扰，应予强调；
-4. “提交一个 commit”表意不明，“commit”本身含义即为“提交”，这一词原本还没有名词词性（GitHub 直接把它当名词用了），故原文的写法令人难以理解，考虑上下文及用例（make a commit、add commits，参见 <https://guides.github.com/introduction/flow/> ），可改为：==填写相关说明（在页面底部），并提交新文件（Commit new file）==，或者：==填写相关说明（在页面底部），并创建一个提交（commit）==；
+4. “提交一个 commit”表意不明，“commit”本身含义即为“提交”，这一词原本还没有名词词性（GitHub 直接把它当名词用了），故原文的写法令人难以理解，考虑上下文及用例（make a commit、add commits，参见 <https://guides.github.com/introduction/flow/> ），可改为：<span><span><span>填写相关说明（在页面底部），并提交新文件（Commit new file）</span></span></span>，或者：<span><span><span>填写相关说明（在页面底部），并创建一个提交（commit）</span></span></span>；
 
 #### 4.2 “任务2.4 从 develop 提交一个 Pull Request 到 master 分支，并将其合并(merge)”
 
-1. “develop”写为“==develop 分支==”比较好，避免误解；
+1. “develop”写为“<span><span><span>develop 分支</span></span></span>”比较好，避免误解；
 2. 拉取请求（Pull Request）是 GitHub 协作的核心操作之一，但这个词理解起来颇费思量，简单的解释可以是“请求代码合并”、“请求对方拉你的代码”（ 参见 <https://www.zhihu.com/question/21682976> ），比较详尽的解释建议参考 GitHub 官方的说明网页（ <https://guides.github.com/introduction/flow/> ）；
-3. “(merge)”写为“==（Merge）==”比较好，与页面一致。
+3. “(merge)”写为“<span><span><span>（Merge）</span></span></span>”比较好，与页面一致。
 
 #### 4.3 “任务3 在 GitHub 的仓库中提交 Issue”
 
@@ -274,17 +275,17 @@ Issue 的位置与“参考资料2”中的截图不一致，应是 GitHub 改�
 
 #### 4.4 “任务4.2 通过 下载地址 安装 Github Desktop 桌面客户端，完成后登录自己的账户”
 
-1. “GitHub Desktop”已经有“桌面”的含义，再说“桌面客户端”有语意重复之嫌，或写为“==GitHub Desktop 客户端==”即可；
+1. “GitHub Desktop”已经有“桌面”的含义，再说“桌面客户端”有语意重复之嫌，或写为“<span><span><span>GitHub Desktop 客户端</span></span></span>”即可；
 2. GitHub Desktop 登录后如果没有克隆任何仓库到本地的话，主菜单出不来，很难找到登出的地方（我错误地登录了一个旧账号，故需要登出），Google 后了解到，可以通过按快捷键 `Ctrl` + `,` 进入 Options 完成登出操作。
 
 #### 4.5 “任务4.4 在本地电脑的 hello-world 仓库中创建一个名为 local.txt 的文本文件”
 
-1. “文本文件”或应写为“==文本文档==”，与 Windows 的表述一致。
+1. “文本文件”或应写为“<span><span><span>文本文档</span></span></span>”，与 Windows 的表述一致。
 2. 为了避免建立扩展名错误的文件（如`local.txt.txt`），应将文件资源管理器设置为显示文件扩展名（【查看】→勾选【文件扩展名】）
 
 #### 4.6 “任务4.5 通过 Github Desktop 将本地仓库新增的文本文件提交为一个 commit”
 
-“提交一个 commit”和“提交为一个 commit”有什么区别？两种表述法都很不清晰，建议改写，或可写为：==填写相关说明（在软件左下角），并提交（Commit to **master**）==。
+“提交一个 commit”和“提交为一个 commit”有什么区别？两种表述法都很不清晰，建议改写，或可写为：<span><span><span>填写相关说明（在软件左下角），并提交（Commit to **master**）</span></span></span>。
 
 #### 4.7 “任务5.3 通过 Github Desktop 将自己账户下 fork 的作业仓库 clone 到本地电脑”
 
@@ -325,12 +326,12 @@ Issue 的位置与“参考资料2”中的截图不一致，应是 GitHub 改�
 
 #### 4.8 “任务5.8 回到 Github 自己账户下的作业仓库页面，向远程公用作业仓库的 master 分支发起 Pull Request，在提交的 Pull Request 的标题（title）中填写自己所在的钉钉群名，如示例：【032901】自学训练营 DAY1 ，并在评论（comment）中 @自己的助教（请向助教索要他的 Github 用户名）提醒他检查作业”
 
-1. 标题要求和示例不一致，应为“==填写自己的学号、钉钉群名、日期序号，如：【032901】自学训练营 DAY1==”；
+1. 标题要求和示例不一致，应为“<span><span><span>填写自己的学号、钉钉群名、日期序号，如：【032901】自学训练营 DAY1</span></span></span>”；
 2. 助教的 GitHub 用户名在开营的时候就给出比较好，写在钉钉的名字上也可以，不然写评论的时候临时问可能会有不便。
 
 #### 总结
 
-- [x] 搞清楚“拉取请求（Pull Request，简称 PR）”的目的和意义
+- [x] 明确“拉取请求（Pull Request，简称 PR）”的目的和意义
 - [x] GitHub Desktop 进入 Option 的方法
 - [x] GitHub Desktop 代理设置
 
@@ -1120,7 +1121,7 @@ def function_name(parameters):
 - `parameters` 是参数，通过参数向函数传入变量。  
   要注意的是一定不要将字符`'l'`（小写字母 l），`'O'`（大写字母 O）或`'I'`（大写字母 I）用作单个字符变量名称。因为这些字母可能跟 0 和 1 混淆。`'L'`（大写字母 L）可以使用。
 - `"""function’s documentation string"""` 是函数的文档字符串，用作对函数的说明。  
-  用三个直双引号（`"""`）标记，可以写多行。写多行的时候，第一行用作标题，然后空一行，第三行开始写其他内容，考虑到第一行开头是“`"""`”，所以缩进按第三行（准确地说，是第一个非空行）的缩进对齐，尾部的。例如：  
+  用三个直双引号（`"""`）标记，可以写多行。写多行的时候，第一行用作标题，然后空一行，第三行开始写其他内容，考虑到第一行开头是“`"""`”，所以缩进按第三行（准确地说，是第一个非空行）的缩进对齐，尾部的三个直双引号。例如：  
 
   ```Python
   def function_name(parameters):
@@ -1136,7 +1137,7 @@ Python 可以把任何一个 `.py` 文件当作模块进行加载，使用的语
 使用 `import` 要注意这么几个问题：
 
 1. `import` 语句的位置  
-   `import` 语句一般要放在程序的开头，如果是在某个函数里使用 `import` 语句，也要
+   `import` 语句一般要放在程序的开头，如果是在某个函数里使用 `import` 语句，也要放在
 2. 啊
 
 #### 4.3 自然语言工具包（NLTK）的使用
