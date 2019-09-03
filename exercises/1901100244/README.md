@@ -371,6 +371,11 @@ Issue 的位置与“参考资料2”中的截图不一致，应是 GitHub 改�
 
 另外，我在搜索的过程中，发现了另一个 Python 3.x 强于 Python 2.7 的地方：多语言支持，简单说，就是中文支持更好。我觉得就这一条也值得用 Python 3.x。
 
+参见：  
+[Python 2.x 与 3​​.x 版本区别](https://www.runoob.com/python/python-2x-3x.html)  
+[为什么你的 Python 版本一团糟？因为少了这个操作](https://segmentfault.com/a/1190000016572389)  
+[Anaconda 完全入门指南](https://www.jianshu.com/p/eaee1fadc1e9)  
+
 #### 4.2 PATH 的设置
 
 PATH 指的是“环境变量”，很多人都没听说过这个东西，所以也值得一记。
@@ -598,25 +603,36 @@ c.NotebookApp.browser = 'Kinza'
 
 其他参考资料：  
 [在应用模式下启动Google Chrome](http://www.kbase101.com/question/46225.html)  
-[这样能将网站添加到Win10任务栏](https://www.pconline.com.cn/win10/988/9882805.html)  
+[这样能将网站添加到 Windows 10 任务栏](https://www.pconline.com.cn/win10/988/9882805.html)  
 [在 Windows 上安装和配置 Jupyter Lab 作为桌面级应用程序](https://blog.csdn.net/weixin_37641832/article/details/94437445#_Chrome__41)  
+[Anaconda 下载、安装、更改默认工作目录](https://blog.csdn.net/Chen_Meng_/article/details/80375884)  
+[初学 Python 者自学 Anaconda 的正确姿势是什么？](https://www.zhihu.com/question/58033789)  
 
 #### 4.8 闲话
 
 Python、Anaconda、Jupyter 这些名字其实都有不少讲究，了解一下不失为一件趣事。
 
-Python 的名称来自于著名的英国BBC电视喜剧《蒙提·派森的飞行马戏团》（*Monty Python's Flying Circus*），Python 的创始人吉多·范罗苏姆很喜欢这套电视剧，就用其中的“Python”做了程序的名字。另外，“Python”还有巨蟒的含义，故而其徽标设计为了两条缠绕的蛇。
+Python 的名称来自于著名的英国BBC电视喜剧《蒙提·派森的飞行马戏团》（*Monty Python’s Flying Circus*），Python 的创始人吉多·范罗苏姆很喜欢这套电视剧，就用其中的“Python”做了程序的名字。另外，“Python”还有巨蟒的含义，故而其徽标设计为了两条缠绕的蛇。
 
 Anaconda 的含义则是一种南美洲热带无毒大蛇“森蚺（rán）”，其作为一个 Python 发行版，使用了一个关系很紧密的名字。Anaconda 的徽标设计与名字一致，是一条头尾相接的蛇。
 
 Jupyter 从 IPython 衍生而来，现在的名字来源于其支持的核心编程语言 Julia、Python、R，是取了三个名字中的字母拼成的，另外“Jupyter”与“Jupiter”谐音，“Jupiter”则有“木星”的含义，这一名字还暗含了对伽利略记录木星卫星发现的笔记本的致敬。Jupyter 的徽标是木星及其卫星的抽象表达，同时还暗指了三个核心编程语言。
 
 另可参见：  
-[维基百科的 Python 页面](https://en.wikipedia.org/wiki/Project_Jupyter)  
+[维基百科的 Python 页面](https://zh.wikipedia.org/wiki/Python)  
+[维基百科的 History of Python 页面](https://en.wikipedia.org/wiki/History_of_Python)  
 [维基百科的 Monty Python 页面](https://en.wikipedia.org/wiki/Monty_Python)  
 [谁设计了Python的徽标？](https://www.quora.com/Who-designed-Pythons-logo)  
+[如何看待 PEP 572 ？](https://www.zhihu.com/question/274823057)  
+[周蟒](https://zh.wikipedia.org/wiki/周蟒)  
+[Blockly](https://developers.google.com/blockly/)  
 [维基百科的 Anaconda 页面](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution))  
+[维基百科的 Conda 页面](https://en.wikipedia.org/wiki/Conda_(package_manager))  
+[Conda](https://conda.io/)  
 [Anaconda needs a new logo](https://99designs.com/logo-design/contests/anaconda-needs-logo-240255)  
+[Anaconda、Miniconda、Conda、pip的相互关系](http://blog.sina.com.cn/s/blog_8a122dcf0102x9vn.html)  
+[Understanding Conda and Pip](https://www.anaconda.com/understanding-conda-and-pip/)  
+[Python 中的 pip 命令及 Anaconda 中 conda 命令](https://blog.csdn.net/a1786742005/article/details/86599939)  
 [维基百科的 Project Jupyter 页面](https://en.wikipedia.org/wiki/Project_Jupyter)  
 [维基百科的 IPython 页面](https://en.wikipedia.org/wiki/IPython)  
 [维基百科的伽利略·伽利莱页面](https://zh.wikipedia.org/wiki/%E4%BC%BD%E5%88%A9%E7%95%A5%C2%B7%E4%BC%BD%E5%88%A9%E8%8E%B1)  
@@ -963,6 +979,8 @@ print(eval(input()))
 
    另可参考：  
    [Python: 使用 lambda 应对各种复杂情况的排序，包括 list 嵌套 dict](https://www.polarxiong.com/archives/Python-使用lambda应对各种复杂情况的排序-包括list嵌套dict.html)  
+   [Python lambda 介绍](https://www.cnblogs.com/evening/archive/2012/03/29/2423554.html)  
+   [Lambda 表达式有何用处？如何使用？](https://www.zhihu.com/question/20125256)  
    [Python `dict()` 函数](https://www.runoob.com/python/python-func-dict.html)
 
 #### 4.5 切片的使用
@@ -1117,15 +1135,32 @@ def function_name(parameters):
   另外，具体的命名风格《[*PEP 8 — Style Guide for Python Code*](https://www.python.org/dev/peps/pep-0008/)》在《[*Descriptive: Naming Styles*](https://www.python.org/dev/peps/pep-0008/#id36)》部分给出了建议，简单地说，单个大小写字母、单个全大写或全小写单词、用下划线连接的全大写或全小写单词、首字母大写的无间隔单词、第一个单词首字母小写其余单词首字母大写的无间隔单词，这些都可以，用下划线连接的首字母大写单词也行，但是丑陋。  
   此外，《[*PEP 8*](https://www.python.org/dev/peps/pep-0008/)》的《[*Prescriptive: Naming Conventions*](https://www.python.org/dev/peps/pep-0008/#id37)》部分针对变量名、包和模块名、类名、变量类型名、异常名、函数名、方法名、常量名等等做出了详细的约定。《[Python 教程](https://docs.python.org/zh-cn/3/tutorial/index.html)》的《[4.8. 小插曲：编码风格](https://docs.python.org/zh-cn/3/tutorial/controlflow.html#intermezzo-coding-style)》也讲了相关的问题。  
   具体到函数名，应该使用全小写单词，根据需要添加下划线连接。  
-  <span style="color: OrangeRed;">一定**不要**用数字开头！一定**不要**用数字开头！一定**不要**用数字开头！</span>
+  <span style="color: OrangeRed;">:exclamation: 一定**不要**用数字开头！  
+  :exclamation: 一定**不要**用数字开头！  
+  :exclamation: 一定**不要**用数字开头！</span>
 - `parameters` 是参数，通过参数向函数传入变量。  
-  要注意的是一定不要将字符`'l'`（小写字母 l），`'O'`（大写字母 O）或`'I'`（大写字母 I）用作单个字符变量名称。因为这些字母可能跟 0 和 1 混淆。`'L'`（大写字母 L）可以使用。
+  要注意的是一定不要将字符`'l'`（小写字母 l），`'O'`（大写字母 O）或`'I'`（大写字母 I）用作单个字符变量名称。因为这些字母可能跟 0 和 1 混淆。`'L'`（大写字母 L）可以使用。  
+  在给变量取名的时候，要考虑到语义，随意地取一些类似 `a`、`b`、`c`、`x`、`y`、`z`，或者 `foo`、`bar`、`zzz`、`qwer`、`asdf` 之类一眼看不出意义的名字，就算当时没有什么问题，将来也会给自己和他人带来困扰和麻烦。  
+  建议可以使用一些常见的、习惯的、直观的名字。如数字，可以使用 `n` 或者 `m`；字符串，可以使用 `text` 或者 `str`；列表，可以使用 `li`；字典，可以使用 `dic` 等等。
 - `"""function’s documentation string"""` 是函数的文档字符串，用作对函数的说明。  
-  用三个直双引号（`"""`）标记，可以写多行。写多行的时候，第一行用作标题，然后空一行，第三行开始写其他内容，考虑到第一行开头是“`"""`”，所以缩进按第三行（准确地说，是第一个非空行）的缩进对齐，尾部的三个直双引号。例如：  
+  用三个直双引号（`"""`）标记，可以写多行。写多行的时候，第一行用作标题，然后空一行，第三行开始写其他内容，考虑到第一行开头是“`"""`”，所以缩进按第三行（准确地说，是第一个非空行）的缩进对齐，尾部的三个直双引号单独成行并与第一行的三个直双引号对齐。例如：  
 
   ```Python
   def function_name(parameters):
-    """Title"""
+    """Title
+
+    This function does stuff.
+
+    Warning!
+      - one
+      - two
+      - three
+
+    References:
+      1. one
+      2. two
+      3. three
+    """
     function_suite
     return [expression]
   ```
