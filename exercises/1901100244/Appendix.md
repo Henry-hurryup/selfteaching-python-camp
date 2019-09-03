@@ -108,6 +108,11 @@ VS Code 强大的一点是其可以安装大量的插件，安装方法是：
 
 Unicode 字符
 
+##### 链接
+
+参见：  
+[Markdown Syntax](https://github.com/fan2/Markdown/blob/master/Markdown%20Syntax.md)
+
 ##### 图片
 
 经测试，GitHub 上 Markdown 文档中的图片尺寸可以调整！  
@@ -119,6 +124,10 @@ Unicode 字符
 
 在代码格式（`code`）中贴图
 `<code>...</code>` 中可以使用 Markdown 贴图语法
+
+给图片加链接  
+双层嵌套即可，如 `[![Windows site](https://raw.githubusercontent.com/shen-huang/img/master/Logo/Windows_logo_2012-Black_12px.svg?sanitize=true)](http://windows.com)` 显示为 [![Windows Logo](https://raw.githubusercontent.com/shen-huang/img/master/Logo/Windows_logo_2012-Black_12px.svg?sanitize=true)](http://windows.com)  
+也可以使用 Markdown 引用链接贴图语法，如 `[![Windows site][Windows_Logo_12px]](http://windows.com)` 显示为 [![Windows site][Windows_Logo_12px]](http://windows.com)
 
 ##### 列表
 
@@ -132,13 +141,15 @@ Unicode 字符
 
 使用 `<kbd>...</kbd>` 可以渲染出按键的效果。
 
+在按键格式（`<kbd>...<kbd>`）中贴图  
+`<kbd>...<kbd>` 中可以使用 Markdown 贴图语法  
 如 `<kbd>![Win][Windows_Logo_12px] Win</kbd>` 显示为 <kbd>![Win][Windows_Logo_12px] Win</kbd>
 
 ##### 表格
 
 ##### 注释
 
-可以使用 HTML 的注释方式 `<!--  -->`
+可以使用 HTML 的注释方式 `<!--  -->`，注意这种方式无法嵌套注释。
 
 另外可以利用空链接和引用链接的方式添加注释。
 
@@ -147,6 +158,13 @@ Unicode 字符
 [如何在 Markdown 注释一段文字](https://www.jianshu.com/p/9be87e7e15bf)  
 [syntax - Comments in Markdown - Stack Overflow](http://stackoverflow.com/questions/4823468/comments-in-markdown)  
 [如何在 Github Flavored Markdown 中添加内联注释？](https://codeday.me/bug/20190228/716555.html)
+
+##### 徽章
+
+参见：
+[GitHub 项目徽章的添加和设置](https://github.com/EyreFree/EFArticles/blob/master/source/_posts/GitHub-Badge-Introduction.markdown)  
+[为你的 GitHub 生成漂亮的徽章和进度条](https://shikieiki.github.io/2017/03/01/为你的Github生成漂亮的徽章和进度条/)  
+[徽章系列文章](http://www.gdky005.com/categories/shields/)  
 
 ##### 样式
 
@@ -198,6 +216,7 @@ Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册�
 - [使用高级格式](https://help.github.com/cn/articles/working-with-advanced-formatting)
   - [Working with advanced formatting](https://help.github.com/en/articles/working-with-advanced-formatting)
 - [Markdown 语法指南](http://www.ghostchina.com/markdown-guide/)  
+- []
 - [学习 Markdown](http://amwiki.org/doc/?file=020-教程学习篇/005-学习markdown/01-Markdown快速开始)
 - [了不起的 Markdown](https://www.amazon.cn/dp/B07W2ZN8TM)
 - [反思 Markdown：Markdown 的长与短](https://sspai.com/post/37340)  
@@ -206,6 +225,11 @@ Markdown 输出质量可靠的 PDF（参见 吐槽 部分 “复制任务手册�
 - [Org-mode、reST、 Markdown 各有什么优缺点？](https://www.zhihu.com/question/19851600)
 - [神器 Org-mode](https://www.lijigang.com/blog/2018/08/08/神器-org-mode/)
 - [一个博士生是怎么应用 Org-mode 的](https://github.com/lujun9972/emacs-document/blob/master/org-mode/一个博士生是怎么应用Org-mode的.org)
+
+## GitHub 相关信息
+
+参见：  
+[GitHub Wiki 页面的添加和设置](https://github.com/EyreFree/EFArticles/blob/master/source/_posts/GitHub-Wiki-Introduction.markdown)  
 
 ## 常见图片格式
 
@@ -558,6 +582,8 @@ CLI 和 GUI 的历史沿革。
   - Python encode decode
   - Python encode decode unicode escape
   - Python 3 decode unicode
+  - Python lambda
+  - Python items()
   - Python 列表 合并
   - Python 列表推导式
   - 正则表达式 贪婪模式
