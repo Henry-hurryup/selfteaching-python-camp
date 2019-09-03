@@ -238,10 +238,11 @@ CLI 和 GUI 的历史沿革。
 可以通过如下几种方式进入命令提示符（任选其一）：
 
 - 依次点击【![Win][Windows_Logo_12px] 开始】-【Windows 系统】-【命令提示符】
-- 点击【![Win][Windows_Logo_12px] 开始】- 输入 CMD - 按 `↵ 回车`
-- 按 <code>![Win][Windows_Logo_12px] Win</code> - 输入 CMD - 按 `↵ 回车`
-- 按 <code>![Win][Windows_Logo_12px] Win</code> + `r` - 输入 CMD - 按 `↵ 回车`
+- 点击【![Win][Windows_Logo_12px] 开始】- 输入 `CMD` - 按 <kbd>↵ 回车</kbd>
+- 按 <kbd>![Win][Windows_Logo_8px] Win</kbd> - 输入 `CMD` - 按 <kbd>↵ 回车</kbd>
+- 按 <kbd>![Win][Windows_Logo_8px] Win</kbd> + <kbd>r</kbd> - 输入 `CMD` - 按 <kbd>↵ 回车</kbd>
 
+###### 2.2.1.2. 切换文件夹
 
 ##### 2.2.2. PowerShell
 
@@ -690,8 +691,10 @@ CLI 和 GUI 的历史沿革。
 
 <!-- 复用的图片和链接 -->
 
-<!-- ![Win][Windows_Logo_20px]![Win][Windows_Logo_16px]![Win][Windows_Logo_12px] -->
+<!-- ![Win][Windows_Logo_20px]![Win][Windows_Logo_16px]![Win][Windows_Logo_12px]![Win][Windows_Logo_8px]![Win][Windows_Logo_6px] -->
 
 [Windows_Logo_20px]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Windows_logo_2012-Black.svg/20px-Windows_logo_2012-Black.svg.png
 [Windows_Logo_16px]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Windows_logo_2012-Black.svg/16px-Windows_logo_2012-Black.svg.png
 [Windows_Logo_12px]: https://raw.githubusercontent.com/shen-huang/img/master/Logo/Windows_logo_2012-Black_12px.svg?sanitize=true
+[Windows_Logo_8px]: https://raw.githubusercontent.com/shen-huang/img/master/Logo/Windows_logo_2012-Black_8px.svg?sanitize=true
+[Windows_Logo_6px]: https://raw.githubusercontent.com/shen-huang/img/master/Logo/Windows_logo_2012-Black_6px.svg?sanitize=true
