@@ -721,7 +721,7 @@ print(eval(input()))
 
 #### 4.4 一不留神就可能会导致错误的缩进
 
-和许多语言不同，Python 要求严格的代码缩进对齐，这导致有的时候仅仅是多了一个空格，代码就出现问题。比如这样一段代码：
+和许多语言不同，Python 要求严格的代码缩进对齐，这导致有的时候仅仅是多了一个空格，代码就出现问题。有些时候问题出得还相当隐蔽，比如这样一段代码：
 
 ```Python
 if True:
@@ -731,6 +731,9 @@ else:
         print("c")
 ```
 
+在网页上看似乎没有什么问题，但贴到 VS Code 里就无法正常运行。它在 VS Code 里可能长这样：
+
+![制表符和空格对比](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_1.png)
 
 
 
