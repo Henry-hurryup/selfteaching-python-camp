@@ -735,9 +735,11 @@ else:
 
 ![制表符和空格对比](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_0.png)
 
-注意这里对齐不一致了，而且还有多处报错（显示为黄色和红色的波浪线）。
+注意这里对齐不一致了，出现这样的问题，是由于原始代码混用了制表符（`↹`，即按 <kbd>Tab</kbd> 键输出的字符）和空格（`␣`，即按空格 <kbd>　　</kbd> 键输出的字符）
 
-出现这样的问题，是由于原始代码混用了制表符（<kbd>Tab</kbd>
+![制表符和空格对比报错](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_1.png)
+
+有多处报错（显示为黄色和红色的波浪线）。
 
 #### 总结
 
