@@ -43,11 +43,13 @@ GitHub 在《[GitHub Flavored Markdown 规范](https://github.github.com/gfm/)�
 
 VS Code 强大的一点是其可以安装大量的插件，安装方法是：
 
-1. 使用快捷键 `Ctrl` + `Shift` + `X`（Windows）或 `Command` + `Shift`+ `X`（macOS） 进入插件市场；
+1. 使用快捷键 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd>（Windows）或 <kbd>⌘ Command</kbd> + <kbd>⇧ Shift</kbd> + <kbd>X</kbd>（macOS） 进入插件市场；
 2. 在搜索框中输入计划安装插件的关键字；
 3. 在搜索结果中点击插件名，会出现插件的详情页；
 4. 在详情页点击“Install”安装插件；
 5. 重启 VS Code。
+
+如果对 VS Code 界面的颜色、图标、字体等不大满意，可以安装不同的主题（Theme）插件进行美化，在插件市场里搜索“Theme”就可以找到不少，还可以通过 [VSCodeThemes](https://vscodethemes.com/) 网站进行预览、对比、安装。建议主要写代码（后端工作）时使用深色主题，保护视力；主要写网页（前端工作）时使用浅色主题，避免在编辑器和预览页面反复切换时出现闪烁，减少对眼睛的刺激。
 
 我所安装的插件有：
 
@@ -64,6 +66,9 @@ VS Code 强大的一点是其可以安装大量的插件，安装方法是：
 - 界面美化
   - [One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)
   - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+  - [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme)
+  - [Atom One Light Theme](https://marketplace.visualstudio.com/items?itemName=akamud.vscode-theme-onelight)
+  - [GitHub Plus Theme](https://marketplace.visualstudio.com/items?itemName=thenikso.github-plus-theme)
 - 快捷键
   - [IntelliJ IDEA Keybindings](https://marketplace.visualstudio.com/items?itemName=k--kato.intellij-idea-keybindings)
 
@@ -262,9 +267,9 @@ CLI 和 GUI 的历史沿革。
 可以通过如下几种方式进入命令提示符（任选其一）：
 
 - 依次点击【![Win][Windows_Logo_12px] 开始】-【Windows 系统】-【命令提示符】
-- 点击【![Win][Windows_Logo_12px] 开始】- 输入 `CMD` - 按 <kbd>↵ 回车</kbd>
-- 按 <kbd>![Win][Windows_Logo_8px] Win</kbd> - 输入 `CMD` - 按 <kbd>↵ 回车</kbd>
-- 按 <kbd>![Win][Windows_Logo_8px] Win</kbd> + <kbd>r</kbd> - 输入 `CMD` - 按 <kbd>↵ 回车</kbd>
+- 点击【![Win][Windows_Logo_12px] 开始】- 输入 `CMD` - 按 <kbd>↵ Enter</kbd>
+- 按 <kbd>![Win][Windows_Logo_8px] Win</kbd> - 输入 `CMD` - 按 <kbd>↵ Enter</kbd>
+- 按 <kbd>![Win][Windows_Logo_8px] Win</kbd> + <kbd>R</kbd> - 输入 `CMD` - 按 <kbd>↵ Enter</kbd>
 
 ###### 2.2.1.2. 切换文件夹
 
@@ -651,6 +656,7 @@ CLI 和 GUI 的历史沿革。
   - VS Code Python 调试
   - VS Code 纵向选择
   - VS Code Markdown
+  - VS Code 亮色主题
 - **Jupyter 相关**
   - Jupyter 用特定浏览器
   - Jupyter Anaconda 无法启动
