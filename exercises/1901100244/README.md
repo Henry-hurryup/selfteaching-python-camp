@@ -417,7 +417,7 @@ C:\Users\<<em>UserName</em>>\Anaconda3\Library\mingw-w64\bin</code>
 
 其实如果按手册前文的要求，通过 Anaconda Navigator (Anaconda3) 安装好了 VS Code，那么 Python 的环境基本已经配置好了，更多的由于环境配置出现的问题，其实应该通过配置系统环境变量（见上文）解决。
 
-个人认为，为了 Python 配置 VS Code 更值得参考的文档是 [VS Code 扩展市场](https://code.visualstudio.com/docs/editor/extension-gallery)的介绍，以及 [VS Code Python 入门教程](https://code.visualstudio.com/docs/python/python-tutorial)。
+个人认为，为了 Python 配置 VS Code 更值得参考的文档是 [VS Code 扩展市场](https://code.visualstudio.com/docs/editor/extension-gallery)的介绍，和 [VS Code Python 入门教程](https://code.visualstudio.com/docs/python/python-tutorial)。
 
 扩展市场是发挥 VS Code 强大潜力不可或缺的一部分。其实从 Anaconda 装好 VS Code 后，Python 扩展已经默认安装了，故而只说 Python 的话，对这部分也可以不了解。不过如果需要其他功能，如 VS Code 的中文界面、Markdown 支持、颜色/图标等个性化界面配置、快捷键调整等等，都得靠从扩展市场装扩展才行，所以知道怎么操作扩展市场，是用好 VS Code 的重要一环。
 
@@ -444,7 +444,7 @@ i. 括号（“()”）
 一定要是半角英文括号，成对出现；  
 ii. 引号  
 单引号（'）、双引号（"）、三引号（'''或"""）有区别有联系，应注意识别，参见：<https://blog.csdn.net/woainishifu/article/details/76105667>；  
-iii. 如果想写中文的话（比如“你好，世界！”），需要在程序第一行添加<pre><code># -*- coding: UTF-8 -*-</code></pre>
+iii. 如果想写中文的话（比如“你好，世界！”），为了向下兼容，建议在程序第一行添加<pre><code># -*- coding: UTF-8 -*-</code></pre>
 iv. 建议在程序开头用注释的形式写明程序用途，如
 
 ```Python
@@ -733,9 +733,11 @@ else:
 
 在网页上看似乎没有什么问题，但贴到 VS Code 里就无法正常运行。它在 VS Code 里可能长这样：
 
-![制表符和空格对比](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_1.png)
+![制表符和空格对比](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_0.png)
 
+注意这里对齐不一致了，而且还有多处报错（显示为黄色和红色的波浪线）。
 
+出现这样的问题，是由于原始代码混用了制表符（<kbd>Tab</kbd>
 
 #### 总结
 
