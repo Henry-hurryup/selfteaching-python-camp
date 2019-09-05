@@ -191,11 +191,9 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 参考资料：  
 [](~科学上网)[相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
 [机场简介](https://github.com/DuyaoSS/SSR/issues/1)  
-
-[](~[Shadowsocks 的前世后生](http://www.chinagfw.org/2016/08/shadowsocks_31.html)  
+<!-- [Shadowsocks 的前世后生](http://www.chinagfw.org/2016/08/shadowsocks_31.html)  
 [clowwindy 关于 Shadowsocks 的交流 Issue #293](https://github.com/shadowsocks/shadowsocks-windows/issues/293)  
-[鲁迅都救不了，几个程序员就能救了？](https://zankyo.cc/1033/)  )
-
+[鲁迅都救不了，几个程序员就能救了？](https://zankyo.cc/1033/)   -->
 [Google 百度和谷歌的那些事](http://blog.devep.net/virushuo/2010/01/14/blog56google_blogtinyfool_1_go.html)  
 [百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)[](~（中国新闻网的这篇稿有高级黑的感觉）)  
 [谷歌 Play 商店允许中国开发者销售付费应用](http://game.people.com.cn/n/2014/1212/c48662-26194242.html)
