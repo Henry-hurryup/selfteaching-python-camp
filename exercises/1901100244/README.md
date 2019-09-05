@@ -192,7 +192,7 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 [](~科学上网)[相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
 [机场简介](https://github.com/DuyaoSS/SSR/issues/1)  
 
-[ˉxˉ]: # (
+[](
 [Shadowsocks 的前世后生](http://www.chinagfw.org/2016/08/shadowsocks_31.html)  
 [clowwindy 关于 Shadowsocks 的交流 Issue #293](https://github.com/shadowsocks/shadowsocks-windows/issues/293)  
 [鲁迅都救不了，几个程序员就能救了？](https://zankyo.cc/1033/)  
