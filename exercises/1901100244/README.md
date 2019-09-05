@@ -268,13 +268,13 @@ GitHub 的基本使用
 1. 创建文件的操作方式在“参考资料1”中没有；
 2. 新手在尝试创建 develop.txt 时可能会漏掉“.txt”，应予强调；
 3. 底部“Commit changes”区的提交信息（a commit message）比较重要，不填写或仅依靠默认内容有可能导致无法提交，造成困扰，应予强调；
-4. “提交一个 commit”表意不明，“commit”本身含义即为“提交”，这一词原本还没有名词词性（GitHub 直接把它当名词用了），故原文的写法令人难以理解，考虑上下文及用例（make a commit、add commits，参见 <https://guides.github.com/introduction/flow/> ），可改为：<span><span><span>填写相关说明（在页面底部），并提交新文件（Commit new file）</span></span></span>，或者：<span><span><span>填写相关说明（在页面底部），并创建一个提交（commit）</span></span></span>；
+4. “提交一个 commit”表意不明，“commit”本身含义即为“提交”，这一词原本还没有名词词性（GitHub 直接把它当名词用了），故原文的写法令人难以理解，考虑上下文及用例（make a commit、add commits，参见 <https://guides.github.com/introduction/flow/> ），可改为：<span><b>填写相关说明（在页面底部），并提交新文件（Commit new file）</b></span>，或者：<span><b>填写相关说明（在页面底部），并创建一个提交（commit）</b></span>；
 
 #### 4.2 “任务2.4 从 develop 提交一个 Pull Request 到 master 分支，并将其合并(merge)”
 
-1. “develop”写为“<span><span><span>develop 分支</span></span></span>”比较好，避免误解；
+1. “develop”写为“<span><b>develop 分支</b></span>”比较好，避免误解；
 2. 拉取请求（Pull Request）是 GitHub 协作的核心操作之一，但这个词理解起来颇费思量，简单的解释可以是“请求代码合并”、“请求对方拉你的代码”（ 参见 <https://www.zhihu.com/question/21682976> ），比较详尽的解释建议参考 GitHub 官方的说明网页（ <https://guides.github.com/introduction/flow/> ）；
-3. “(merge)”写为“<span><span><span>（Merge）</span></span></span>”比较好，与页面一致。
+3. “(merge)”写为“<span><b>（Merge）</b></span>”比较好，与页面一致。
 
 #### 4.3 “任务3 在 GitHub 的仓库中提交 Issue”
 
@@ -282,17 +282,17 @@ Issue 的位置与“参考资料2”中的截图不一致，应是 GitHub 改�
 
 #### 4.4 “任务4.2 通过 下载地址 安装 Github Desktop 桌面客户端，完成后登录自己的账户”
 
-1. “GitHub Desktop”已经有“桌面”的含义，再说“桌面客户端”有语意重复之嫌，或写为“<span><span><span>GitHub Desktop 客户端</span></span></span>”即可；
-2. GitHub Desktop 登录后如果没有克隆任何仓库到本地的话，主菜单出不来，很难找到登出的地方（我错误地登录了一个旧账号，故需要登出），Google 后了解到，可以通过按快捷键 `Ctrl` + `,` 进入 Options 完成登出操作。
+1. “GitHub Desktop”已经有“桌面”的含义，再说“桌面客户端”有语意重复之嫌，或写为“<span><b>GitHub Desktop 客户端</b></span>”即可；
+2. GitHub Desktop 登录后如果没有克隆任何仓库到本地的话，主菜单出不来，很难找到登出的地方（我错误地登录了一个旧账号，故需要登出），Google 后了解到，可以通过按快捷键 <kbd>Ctrl</kbd> + <kbd>,</kbd> 进入 Options 完成登出操作。
 
 #### 4.5 “任务4.4 在本地电脑的 hello-world 仓库中创建一个名为 local.txt 的文本文件”
 
-1. “文本文件”或应写为“<span><span><span>文本文档</span></span></span>”，与 Windows 的表述一致。
+1. “文本文件”或应写为“<span><b>文本文档</b></span>”，与 Windows 的表述一致。
 2. 为了避免建立扩展名错误的文件（如`local.txt.txt`），应将文件资源管理器设置为显示文件扩展名（【查看】→勾选【文件扩展名】）
 
 #### 4.6 “任务4.5 通过 Github Desktop 将本地仓库新增的文本文件提交为一个 commit”
 
-“提交一个 commit”和“提交为一个 commit”有什么区别？两种表述法都很不清晰，建议改写，或可写为：<span><span><span>填写相关说明（在软件左下角），并提交（Commit to **master**）</span></span></span>。
+“提交一个 commit”和“提交为一个 commit”有什么区别？两种表述法都很不清晰，建议改写，或可写为：<span><b>填写相关说明（在软件左下角），并提交（Commit to **master**）</b></span>。
 
 #### 4.7 “任务5.3 通过 Github Desktop 将自己账户下 fork 的作业仓库 clone 到本地电脑”
 
@@ -321,9 +321,9 @@ Issue 的位置与“参考资料2”中的截图不一致，应是 GitHub 改�
     其中`127.0.0.1`是本机地址，`7891`和`7890`都是端口号，`proxy`前面有一个制表符（Tab），注意，这里的代理地址仅为范例，以具体情况为准。
 7. macOS 版 GitHub Desktop 的 `.gitconfig` 文件在 `~/`，可以在终端（Terminal）用 Vim 打开文件并编辑，步骤为：  
    i. 在终端（Terminal）输入 `vi ~/.gitconfig` 并回车；  
-   ii. 按`i`键进入插入（insert）编辑模式；  
+   ii. 按 <kbd>i</kbd> 键进入插入（insert）编辑模式；  
    iii. 在文件末尾添加代理信息，格式和 Windows 的一样；  
-   iv. 按`ESC`键退出插入编辑模式，输入`:wq`，回车保存。  
+   iv. 按 <kbd>ESC</kbd> 键退出插入编辑模式，输入`:wq`，回车保存。  
    我没有 macOS，所以并没有测试这样操作是否可行，仅供参考。另外，这部分参考了：<https://www.jianshu.com/p/5e74b1042b70>。
 8. 对比  
    i. 设置前  
@@ -333,7 +333,7 @@ Issue 的位置与“参考资料2”中的截图不一致，应是 GitHub 改�
 
 #### 4.8 “任务5.8 回到 Github 自己账户下的作业仓库页面，向远程公用作业仓库的 master 分支发起 Pull Request，在提交的 Pull Request 的标题（title）中填写自己所在的钉钉群名，如示例：【032901】自学训练营 DAY1 ，并在评论（comment）中 @自己的助教（请向助教索要他的 Github 用户名）提醒他检查作业”
 
-1. 标题要求和示例不一致，应为“<span><span><span>填写自己的学号、钉钉群名、日期序号，如：【032901】自学训练营 DAY1</span></span></span>”；
+1. 标题要求和示例不一致，应为“<span><b>填写自己的学号、钉钉群名、日期序号，如：【032901】自学训练营 DAY1</b></span>”；
 2. 助教的 GitHub 用户名在开营的时候就给出比较好，写在钉钉的名字上也可以，不然写评论的时候临时问可能会有不便。
 
 #### 总结
@@ -746,15 +746,18 @@ else:
 
 要避免出现这种问题，首先得有认真细致的态度，同时相应的工具也是必不可少的，这种工具通称[“静态程序分析工具”（英文为 lint）](https://en.wikipedia.org/wiki/Lint_(software))。
 
-在 VS Code 里打开静态程序分析工具的方法是，在编辑区点击鼠标右键，再点击菜单里的【命令面板...】（或按快捷键 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>），输入 `Linter`，点击“Python: 选择 Linter 插件”，再点击要启用的插件即可。可选择的插件中，“pylint”是 Python 扩展所带的插件，一般可以直接使用，其他插件各有长处，可以按需选择，选择后可能会弹出提示告知需要安装，根据提示操作即可。我个人选择了分析内容相对更多的“[flake8](https://pypi.org/project/flake8/)”插件（除了语法检查外，还有代码风格检查）。
+在 VS Code 里打开静态程序分析工具的方法是，在编辑区点击鼠标右键，再点击菜单里的【命令面板...】（或按快捷键 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>），输入 `Linter`，点击“Python: 选择 Linter 插件”，再点击要启用的插件即可。可选择的插件中，“pylint”是 Python 扩展所带的插件，一般可以直接使用，其他插件各有长处，可以按需选择，选择后可能会弹出提示告知需要安装，根据提示操作即可，设定完成后也可以随时切换。我个人使用了分析内容相对更多的“[flake8](https://pypi.org/project/flake8/)”插件（除了语法检查外，还有代码风格检查）。
 
-启用了 flake8 插件后，这段代码出现了多处报错（显示为黄色和红色的波浪线）——  
+启用了 flake8 插件后，这段代码出现了多处报错（显示为黄色和红色的波浪线）：  
 ![制表符和空格对比报错](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_1.png)
 
-混用了制表符和空格的代码，就算是看上去对齐了，也会报错——  
-![制表符和空格对比报错](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_1.png)
+混用了制表符和空格的代码，就算是看上去对齐了，也会报错：  
+![制表符和空格对比报错](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_2.png)
 
-把
+把鼠标指针放到报错的地方，会有相应的错误提示：  
+![制表符和空格对比报错提示](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_3.png)
+
+其实，静态程序分析工具可以检查出的问题远不止缩进这一点点，错误的拼写、遗漏的符号、未定义的变量等等，都可以检查出来。有了这样的工具，就算是写代码的时候出了些差错，也不至于束手无策了。
 
 #### 总结
 
@@ -827,7 +830,7 @@ else:
 
 - 用变量控制 `range()` 函数的右边界以省略两数大小判断；
 - 把循环区间设定为 `[1, 3, 5, 7, 9]` 以省略 `while` 循环；
-- 用 `if` 替代 `while` 实现判断；
+- 用 `while` 替代 `if` 实现判断；
 - 用 `if...continue` 替代 `while...break` 实现判断。
 
 算是把不同的循环方式都练习了几遍。
@@ -882,8 +885,7 @@ else:
 
 另外，原始的文本由于种种原因，使用了“打字机风格”，具体表现在：
 
-- 单引号（‘、’）和撇号（’）使用了直引号（'）进行替代；
-  <!-- 单引号：single quotation mark；撇号：apostrophe。-->
+- 撇号（’）使用了直引号（'）进行替代；[](~单引号：single quotation mark；撇号：apostrophe。)
 - 破折号（—）使用了两个连字符（--）进行替代；
 - 强调使用了成对星号（*）进行表达。
 
@@ -1170,7 +1172,7 @@ def function_name(parameters):
   具体要怎么起这个名字，Python 3.7.4 官方文档《[Python 语言参考](https://docs.python.org/zh-cn/3.7/reference/index.html)》的《[2.3. 标识符和关键字](https://docs.python.org/zh-cn/3.7/reference/lexical_analysis.html#identifiers)》部分给出了使用字符的范围：
   > 在 ASCII 范围内 (U+0001..U+007F)，可用于标识符的字符与 Python 2.x 一致: 大写和小写字母 `A` 至 `Z`，下划线 `_` 以及数字 `0` 至 `9`，但不可以数字打头。
 
-  由于 Python 3.0 引入了 Unicode，所以现在可以用的字符大大增加了，什么 `ǅ`、`ᾮ`、`ๆ`、`ꀕ`、`ↈ`、`𒐝`、`𒐱`、`꜉`、`꜕`、`۵`、`꘨` 等等的都能用。但是，为了通用性，别作妖，应该<span style="color: OrangeRed;">坚持使用ASCII范围内的字符</span>。  
+  由于 Python 3.0 引入了 Unicode，所以现在可以用的字符大大增加了，什么 `ǅ`、`ᾮ`、`ๆ`、`ꀕ`、`ↈ`、`𒐝`、`𒐱`、`꜉`、`꜕`、`۵`、`꘨` 等等的都能用。但是，为了通用性，别作妖，应该<span style="color: OrangeRed;">**坚持使用ASCII范围内的字符**</span>。  
   另外，具体的命名风格《[*PEP 8 — Style Guide for Python Code*](https://www.python.org/dev/peps/pep-0008/)》在《[*Descriptive: Naming Styles*](https://www.python.org/dev/peps/pep-0008/#id36)》部分给出了建议，简单地说，单个大小写字母、单个全大写或全小写单词、用下划线连接的全大写或全小写单词、首字母大写的无间隔单词、第一个单词首字母小写其余单词首字母大写的无间隔单词，这些都可以，用下划线连接的首字母大写单词也行，但是丑陋。  
   此外，《[*PEP 8*](https://www.python.org/dev/peps/pep-0008/)》的《[*Prescriptive: Naming Conventions*](https://www.python.org/dev/peps/pep-0008/#id37)》部分针对变量名、包和模块名、类名、变量类型名、异常名、函数名、方法名、常量名等等做出了详细的约定。《[Python 教程](https://docs.python.org/zh-cn/3/tutorial/index.html)》的《[4.8. 小插曲：编码风格](https://docs.python.org/zh-cn/3/tutorial/controlflow.html#intermezzo-coding-style)》也讲了相关的问题。  
   具体到函数名，应该使用全小写单词，根据需要添加下划线连接。  
