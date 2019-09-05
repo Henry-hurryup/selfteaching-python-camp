@@ -128,6 +128,12 @@
 这一情况，在经济学上叫“[三元悖论（Trilemma）](https://zh.wikipedia.org/wiki/三元悖论)”，也叫“不可能三角”，后来被拓展到了各种领域，进一步了解可以参考知乎这个问题：“[世界上有哪些不可能三角？](https://www.zhihu.com/question/265410886)”
 
 这个动图相对直观地表现了这一问题：  
+
+[^_^]: # (我是注  
+释，不会  
+在浏览器  
+中显示。)
+
 [^_^]: # (![质量_价格_速度_不可能三角](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif)  )
 <img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif" width="200px" alt="质量_价格_速度_不可能三角" />
 
