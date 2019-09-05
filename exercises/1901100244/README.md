@@ -744,9 +744,11 @@ else:
 
 这种情况在自己写代码的时候并不多见，VS Code 为了避免这种问题，特意在设置里默认把制表符替换成了空格（通过菜单上的【文件(F)】-【首选项】-【设置】，或按快捷键 <kbd>Ctrl</kbd> + <kbd>,</kbd> 就能看到）。但当我们从各种途径复制粘贴代码的时候，难免会把不同来源的代码混在一起，继而出现混用制表符和空格的问题。
 
-要避免出现这种问题，首先得有认真细致的态度，同时相应的工具也是必不可少的，这种工具通称[“静态程序分析工具”（英文为 lint）](https://en.wikipedia.org/wiki/Lint_(software))。
+要避免出现这种问题，首先得有认真细致的态度，同时相应的工具也是必不可少的。
 
-在 VS Code 里打开静态程序分析工具的方法是，在编辑区点击鼠标右键，再点击菜单里的【命令面板...】（或按快捷键 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>），输入 `Linter`，点击“Python: 选择 Linter 插件”，再点击要启用的插件即可。可选择的插件中，“pylint”是 Python 扩展所带的插件，一般可以直接使用，其他插件各有长处，可以按需选择，选择后可能会弹出提示告知需要安装，根据提示操作即可，设定完成后也可以随时切换。我个人使用了分析内容相对更多的“[flake8](https://pypi.org/project/flake8/)”插件（除了语法检查外，还有代码风格检查）。
+最直观的方法，是在 VS Code 的设置里把空白字符的显示打开（在“Editor: Render Whitespace”选项框下选择“boundary”或者“all”即可），靠肉眼看出问题。更高级的方法，是使用[“静态程序分析工具”（英文为 lint）](https://en.wikipedia.org/wiki/Lint_(software))。
+
+在 VS Code 里打开静态程序分析工具的操作是，在编辑区点击鼠标右键，再点击菜单里的【命令面板...】（或按快捷键 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>），输入 `Linter`，点击“Python: 选择 Linter 插件”，再点击要启用的插件即可。可选择的插件中，“pylint”是 Python 扩展所带的插件，一般可以直接使用，其他插件各有长处，可以按需选择，选择后可能会弹出提示告知需要安装，根据提示操作即可，设定完成后也可以随时切换。我个人使用了分析内容相对更多的“[flake8](https://pypi.org/project/flake8/)”插件（除了语法检查外，还有代码风格检查）。
 
 启用了 flake8 插件后，这段代码出现了多处报错（显示为黄色和红色的波浪线）：  
 ![制表符和空格对比报错](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_1.png)
@@ -895,7 +897,7 @@ else:
 
 本着这样的想法，我在原始文本的基础上，考虑了排版规则，结合[维基百科的 The Zen of Python 页面](https://en.wikipedia.org/wiki/Zen_of_Python)的内容，生成了作为练习使用的字符串文本。
 
-此外，我顺着《Python 之禅》找到了[一系列的《Python 增强提案》（*Python Enhancement Proposals*，缩写为 PEPs）](https://www.python.org/dev/peps/)。这其中的[《Python 代码风格指南》（*Style Guide for Python Code*，编号为 PEP 8）](https://www.python.org/dev/peps/pep-0008/)应该是学习 Python 编程的必读文本，其对各种具体的代码书写内容都给出了参考规范，如果读完了觉得太过繁琐，一时记不住，也不要紧，可以利用“flake8”插件协助检查（可参见 DAY 03 中“[一不留神就可能会导致错误的缩进](#44-%e4%b8%80%e4%b8%8d%e7%95%99%e7%a5%9e%e5%b0%b1%e5%8f%af%e8%83%bd%e4%bc%9a%e5%af%bc%e8%87%b4%e9%94%99%e8%af%af%e7%9a%84%e7%bc%a9%e8%bf%9b)”部分的相关内容）。其他的提案也可以选择性地读一读。
+此外，我顺着《Python 之禅》找到了[一系列的《Python 增强提案》（*Python Enhancement Proposals*，缩写为 *PEPs*）](https://www.python.org/dev/peps/)。这其中的[《Python 代码风格指南》（*Style Guide for Python Code*，编号为 PEP 8）](https://www.python.org/dev/peps/pep-0008/)应该是学习 Python 编程的必读文本，其对各种具体的代码书写内容都给出了参考规范，如果读完了觉得太过繁琐，一时记不住，也不要紧，可以利用“flake8”插件协助检查（可参见 DAY 03 中“[一不留神就可能会导致错误的缩进](#44-%e4%b8%80%e4%b8%8d%e7%95%99%e7%a5%9e%e5%b0%b1%e5%8f%af%e8%83%bd%e4%bc%9a%e5%af%bc%e8%87%b4%e9%94%99%e8%af%af%e7%9a%84%e7%bc%a9%e8%bf%9b)”部分的相关内容）。其他的提案也可以选择性地读一读。
 
 另可参见：  
 [维基百科的 Python 之禅页面](https://zh.wikipedia.org/wiki/Python%E4%B9%8B%E7%A6%85)  
@@ -972,7 +974,7 @@ else:
 
 1. 使用“`not in`”而非“`not...in`”  
    更具体地说，`if w not in text` 和 `if not w in text` 是等价的，但前一种写法更易读。  
-   现在 Flake8 会把“`not...in`”标记出来（[E713](https://lintlyci.github.io/Flake8Rules/rules/E713.html)）并给出修改为“`not in`”的建议，同理，“`is not`”和“`not...is`”也有同样的问题（[E714](https://lintlyci.github.io/Flake8Rules/rules/E714.html)）。[PEP 8](https://www.python.org/dev/peps/pep-0008/) 对此也有[说明](https://www.python.org/dev/peps/pep-0008/#programming-recommendations)。另可参考《[Python 中 not 的用法](https://blog.csdn.net/Evan123mg/article/details/50174669)》一文。
+   现在 Flake8 会把“`not...in`”标记出来（[E713](https://lintlyci.github.io/Flake8Rules/rules/E713.html)）并给出修改为“`not in`”的建议，同理，“`is not`”和“`not...is`”也有同样的问题（[E714](https://lintlyci.github.io/Flake8Rules/rules/E714.html)）。《[PEP 8](https://www.python.org/dev/peps/pep-0008/)》对此也有[说明](https://www.python.org/dev/peps/pep-0008/#programming-recommendations)。另可参考《[Python 中 not 的用法](https://blog.csdn.net/Evan123mg/article/details/50174669)》一文。
 2. 字典、元组、列表  
    字典不能直接排序，需要用 `item()` 函数把字典转成一个由元组构成的列表，然后再用 `sorted()` 函数排序。  
    这里可能出现的波折是混淆了 `sort()` 和 `sorted()`。简单说，由字典转成的列表，不能用 `sort()` 排序，只能用 `sorted()` 排序。更多的信息可以参考《[Python 中列表、元组及字典的排序](https://blog.csdn.net/Kyrie001/article/details/82528011)》、《[Python 中方法 sort() 和函数 sorted() 的区别](https://blog.csdn.net/chengxugou001/article/details/79684615)》、《[Python 中排序函数 sort() 和 sorted() 的区别](https://blog.csdn.net/sinat_35512245/article/details/79584196)》等文。
@@ -1172,7 +1174,7 @@ def function_name(parameters):
   具体要怎么起这个名字，Python 3.7.4 官方文档《[Python 语言参考](https://docs.python.org/zh-cn/3.7/reference/index.html)》的《[2.3. 标识符和关键字](https://docs.python.org/zh-cn/3.7/reference/lexical_analysis.html#identifiers)》部分给出了使用字符的范围：
   > 在 ASCII 范围内 (U+0001..U+007F)，可用于标识符的字符与 Python 2.x 一致: 大写和小写字母 `A` 至 `Z`，下划线 `_` 以及数字 `0` 至 `9`，但不可以数字打头。
 
-  由于 Python 3.0 引入了 Unicode，所以现在可以用的字符大大增加了，什么 `ǅ`、`ᾮ`、`ๆ`、`ꀕ`、`ↈ`、`𒐝`、`𒐱`、`꜉`、`꜕`、`۵`、`꘨` 等等的都能用。但是，为了通用性，别作妖，应该<span style="color: OrangeRed;">**坚持使用ASCII范围内的字符**</span>。  
+  不过由于 Python 3.0 引入了 Unicode，所以现在取名用的字符并不一定要局限在ASCII 范围内，什么 `ǅ`、`ᾮ`、`ๆ`、`ꀕ`、`ↈ`、`𒐝`、`𒐱`、`꜉`、`꜕`、`۵`、`꘨` 等等的都能用。但是，为了通用性，别作妖，应该<span style="color: OrangeRed;">**坚持使用ASCII范围内的字符**</span>。  
   另外，具体的命名风格《[*PEP 8 — Style Guide for Python Code*](https://www.python.org/dev/peps/pep-0008/)》在《[*Descriptive: Naming Styles*](https://www.python.org/dev/peps/pep-0008/#id36)》部分给出了建议，简单地说，单个大小写字母、单个全大写或全小写单词、用下划线连接的全大写或全小写单词、首字母大写的无间隔单词、第一个单词首字母小写其余单词首字母大写的无间隔单词，这些都可以，用下划线连接的首字母大写单词也行，但是丑陋。  
   此外，《[*PEP 8*](https://www.python.org/dev/peps/pep-0008/)》的《[*Prescriptive: Naming Conventions*](https://www.python.org/dev/peps/pep-0008/#id37)》部分针对变量名、包和模块名、类名、变量类型名、异常名、函数名、方法名、常量名等等做出了详细的约定。《[Python 教程](https://docs.python.org/zh-cn/3/tutorial/index.html)》的《[4.8. 小插曲：编码风格](https://docs.python.org/zh-cn/3/tutorial/controlflow.html#intermezzo-coding-style)》也讲了相关的问题。  
   具体到函数名，应该使用全小写单词，根据需要添加下划线连接。  
@@ -1208,7 +1210,10 @@ def function_name(parameters):
 
 - `function_suite` 是函数体，也就是函数所实现功能的代码。  
   这部分代码和平常写的代码基本一致，需要注意的地方有：  
-  i. 缩进，整段代码至少缩进 1 个
+  ⅰ. 缩进  
+      整段代码至少缩进 1 个定长（《[*PEP 8*](https://www.python.org/dev/peps/pep-0008/)》要求[使用 4 个空格](https://www.python.org/dev/peps/pep-0008/#id17)，VS Code 设置无误的话，按 1 次 <kbd>Tab</kbd> 键就可以输入 4 个空格）；  
+  ⅱ. 变量  
+  ⅲ. 空行
 
 #### 4.2 加载模块语句的使用
 
