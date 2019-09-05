@@ -130,6 +130,7 @@
 这个动图相对直观地表现了这一问题：  
 
 [^_^]: # (![质量_价格_速度_不可能三角](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif)  )
+
 <img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif" width="200px" alt="质量_价格_速度_不可能三角" />
 
 其次要明确的，是自己的实际需要。
