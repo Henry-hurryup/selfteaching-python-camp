@@ -114,9 +114,9 @@
 
 #### 4.1 网络环境
 
-正常访问 GitHub 和 Google 是个难点<!-- ，不过班里没什么人聊这个（可能是不方便聊），不知都是怎么搞定的，推测应该是八仙过海了 -->。
+正常访问 GitHub 和 Google 是个难点[](~，不过班里没什么人聊这个（可能是不方便聊），不知都是怎么搞定的，推测应该是八仙过海了)。
 
-<!-- 
+
 数年间我为此耗费了无数时间，试过的方案都有两位数了，现在多少有点心得。
 
 首先要理解的，是这类服务中，价格、速度、流量三者，最多只能同时取其二。
@@ -128,7 +128,7 @@
 这一情况，在经济学上叫“[三元悖论（Trilemma）](https://zh.wikipedia.org/wiki/三元悖论)”，也叫“不可能三角”，后来被拓展到了各种领域，进一步了解可以参考知乎这个问题：“[世界上有哪些不可能三角？](https://www.zhihu.com/question/265410886)”
 
 这个动图相对直观地表现了这一问题：  
-<!-- ![质量_价格_速度_不可能三角](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif)   --%>
+[^_^]: # (![质量_价格_速度_不可能三角](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif)  )
 <img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif" width="200px" alt="质量_价格_速度_不可能三角" />
 
 其次要明确的，是自己的实际需要。
@@ -177,7 +177,7 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 8. 遇到天灾人祸跑路了，不必介怀，这属于国难；
 9. 目的是使用完整的互联网，不要为路径耗费太多时间和精力。
 -->
-:exclamation::exclamation::exclamation: 据我所知，用于正常访问 GitHub、Google 等网站的计算机（特别是 Windows 系统的），应该**避免**安装中国大陆地区的各类“安全软件”、“浏览器”甚至“全家桶”，包括但不限于：
+:exclamation::exclamation::exclamation: 据我所知，用于正常访问 GitHub、Google 等网站的计算机（特别是 Windows 系统的），应该<span><b>**避免**</b></span>安装中国大陆地区的各类“安全软件”、“浏览器”甚至“全家桶”，包括但不限于：
 
 - 360 系所有软件；
 - 百度系所有软件；
@@ -185,24 +185,20 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 - 金山系安全软件（其他软件也尽量别用）；
 - 腾讯系安全软件。
 
-<!-- 这些软件对上网有什么具体的影响，就不细说了。 -->
+[＞︿＜]: # (这些软件对上网有什么具体的影响，就不细说了。)
 有些人可能担心安全问题，其实 Windows 10 自带的 Defender 防护能力非常强，在 [2019 年 6 月的 AV-TEST 评测](https://www.av-test.org/en/antivirus/home-windows/)上，Defender 已经成为“顶级产品”了，所以一般使用是不必另外安装安全软件的。
 
 参考资料：  
-[相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
+[](~科学上网)[相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
 [机场简介](https://github.com/DuyaoSS/SSR/issues/1)  
-[Google 百度和谷歌的那些事](http://blog.devep.net/virushuo/2010/01/14/blog56google_blogtinyfool_1_go.html)  
-[百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)  
-[谷歌 Play 商店允许中国开发者销售付费应用](http://game.people.com.cn/n/2014/1212/c48662-26194242.html)
-<!-- 
-[科学上网相关知识总结](https://crifan.github.io/scientific_network_summary/website/)   
+[ˉxˉ]: # (
 [Shadowsocks 的前世后生](http://www.chinagfw.org/2016/08/shadowsocks_31.html)  
 [clowwindy 关于 Shadowsocks 的交流 Issue #293](https://github.com/shadowsocks/shadowsocks-windows/issues/293)  
 [鲁迅都救不了，几个程序员就能救了？](https://zankyo.cc/1033/)  
-[Google 百度和谷歌的那些事](http://blog.devep.net/virushuo/2010/01/14/blog56google_blogtinyfool_1_go.html)
-[百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)（中国新闻网的这篇稿有高级黑的感觉）  
+)
+[Google 百度和谷歌的那些事](http://blog.devep.net/virushuo/2010/01/14/blog56google_blogtinyfool_1_go.html)  
+[百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)[](~（中国新闻网的这篇稿有高级黑的感觉）)  
 [谷歌 Play 商店允许中国开发者销售付费应用](http://game.people.com.cn/n/2014/1212/c48662-26194242.html)
--->
 
 #### 4.2 手册话语
 
@@ -444,7 +440,7 @@ i. 括号（“()”）
 一定要是半角英文括号，成对出现；  
 ii. 引号  
 单引号（'）、双引号（"）、三引号（'''或"""）有区别有联系，应注意识别，参见：<https://blog.csdn.net/woainishifu/article/details/76105667>；  
-iii. 如果想写中文的话（比如“你好，世界！”），为了向下兼容，建议在程序第一行添加<pre><code># -*- coding: UTF-8 -*-</code></pre>
+iii. 如果想写中文的话（比如“你好，世界！”），为了向下兼容，建议在程序第一行添加# `-*- coding: UTF-8 -*-`
 iv. 建议在程序开头用注释的形式写明程序用途，如
 
 ```Python
@@ -453,7 +449,7 @@ iv. 建议在程序开头用注释的形式写明程序用途，如
 # Filename : 1001S02E02_hello_python.py
 # author by : @shen-huang
 
-# 输出“Hello World!”</code>
+# 输出“Hello World!”
 ```
 
 “Hello, World!”现在已经可以算是个[模因（meme）](https://zh.wikipedia.org/wiki/%E8%BF%B7%E5%9B%A0)了，任务之外，了解一下它的[相关信息](https://zh.wikipedia.org/wiki/Hello_World)还是蛮有意思的。
@@ -735,8 +731,15 @@ else:
 
 ![制表符和空格对比](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_0.png)
 
-注意这里对齐不一致了，出现这样的问题，是由于原始代码混用了制表符（`↹`，即按 <kbd>Tab</kbd> 键输出的字符）和空格（`␣`，即按空格 <kbd>　　</kbd> 键输出的字符）
+注意这里对齐不一致了，出现这样的问题，是由于代码编写时混用了制表符（`↹`，即按 <kbd>Tab</kbd> 键输出的字符）和空格（`␣`，即按 <kbd>　　</kbd> 键输出的字符）的缘故。
 
+这种情况在自己写代码的时候并不多见，VS Code 为了避免这种问题，特意在设置里默认把制表符替换成了空格（通过菜单上的【文件(F)】-【首选项】-【设置】，或按快捷键 <kbd>Ctrl</kbd> + <kbd>,</kbd> 就能看到）。但当我们从各种途径复制粘贴代码的时候，难免会把不同来源的代码混在一起，继而出现混用制表符和空格的问题。
+
+要避免出现这种问题，首先得有认真细致的态度，同时相应的工具也是必不可少的，这种工具通称[“静态程序分析工具”（英文为 lint）](https://en.wikipedia.org/wiki/Lint_(software))。
+
+在 VS Code 里打开静态程序分析工具的方法是，在编辑区点击鼠标右键，再点击菜单里的【命令面板...】（或按快捷键 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>），输入 `Linter`，点击“Python: 选择 Linter 插件”，再点击要启用的插件即可。可选择的插件中，“pylint”是 Python 扩展所带的插件，一般可以直接使用，其他插件各有长处，可以按需选择，选择后可能会弹出提示告知需要安装，根据提示操作即可。我个人选择了分析内容相对更多的“[flake8](https://pypi.org/project/flake8/)”插件（除了有语法检查外，还有代码风格检查）。
+
+啊啊啊啊
 ![制表符和空格对比报错](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_1.png)
 
 有多处报错（显示为黄色和红色的波浪线）。
@@ -878,7 +881,7 @@ else:
 
 本着这样的想法，我在原始文本的基础上，考虑了排版规则，结合[维基百科的 The Zen of Python 页面](https://en.wikipedia.org/wiki/Zen_of_Python)的内容，生成了作为练习使用的字符串文本。
 
-此外，我顺着《Python 之禅》找到了[一系列的《Python 增强提案》（*Python Enhancement Proposals*，缩写为 PEPs）](https://www.python.org/dev/peps/)，这其中的[《Python 编码规范》（*Style Guide for Python Code*，编号为 PEP 8）](https://www.python.org/dev/peps/pep-0008/)应该是学习 Python 编程的必读文本，其他的提案也可以选择性地读一读。
+此外，我顺着《Python 之禅》找到了[一系列的《Python 增强提案》（*Python Enhancement Proposals*，缩写为 PEPs）](https://www.python.org/dev/peps/)。这其中的[《Python 代码风格指南》（*Style Guide for Python Code*，编号为 PEP 8）](https://www.python.org/dev/peps/pep-0008/)应该是学习 Python 编程的必读文本，其对各种具体的代码书写内容都给出了参考规范，如果读完了觉得太过繁琐，一时记不住，也不要紧，可以利用“flake8”插件协助检查（可参见 DAY 03 中“[一不留神就可能会导致错误的缩进](#44-%e4%b8%80%e4%b8%8d%e7%95%99%e7%a5%9e%e5%b0%b1%e5%8f%af%e8%83%bd%e4%bc%9a%e5%af%bc%e8%87%b4%e9%94%99%e8%af%af%e7%9a%84%e7%bc%a9%e8%bf%9b)”部分的相关内容）。其他的提案也可以选择性地读一读。
 
 另可参见：  
 [维基百科的 Python 之禅页面](https://zh.wikipedia.org/wiki/Python%E4%B9%8B%E7%A6%85)  
