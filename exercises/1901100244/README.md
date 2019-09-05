@@ -128,8 +128,7 @@
 这一情况，在经济学上叫“[三元悖论（Trilemma）](https://zh.wikipedia.org/wiki/三元悖论)”，也叫“不可能三角”，后来被拓展到了各种领域，进一步了解可以参考知乎这个问题：“[世界上有哪些不可能三角？](https://www.zhihu.com/question/265410886)”
 
 这个动图相对直观地表现了这一问题：  
-[^_^]: # (![质量_价格_速度_不可能三角](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif)  )
-<img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif" width="200px" alt="质量_价格_速度_不可能三角" />
+[](~![质量_价格_速度_不可能三角](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif)  )<img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Good_Cheap_Fast_Trilemma.gif" width="200px" alt="质量_价格_速度_不可能三角" />
 
 其次要明确的，是自己的实际需要。
 
@@ -177,6 +176,7 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 8. 遇到天灾人祸跑路了，不必介怀，这属于国难；
 9. 目的是使用完整的互联网，不要为路径耗费太多时间和精力。
 -->
+
 :exclamation::exclamation::exclamation: 据我所知，用于正常访问 GitHub、Google 等网站的计算机（特别是 Windows 系统的），应该<span><b>**避免**</b></span>安装中国大陆地区的各类“安全软件”、“浏览器”甚至“全家桶”，包括但不限于：
 
 - 360 系所有软件；
