@@ -142,7 +142,7 @@
 
 还有一种情况，是要在非中国大陆地区用[优酷](https://www.youku.com/)、[爱奇艺](https://www.iqiyi.com/)、[网易云音乐](https://music.163.com/)之类服务的，需要服务商有“回国线路”才可以。
 
-价格便宜流量多的那种服务往往比较鸡肋，简单地说⸺流量是多，可要是龟速，怎么用得完呢？
+价格便宜流量多的那种服务往往比较鸡肋，简单地说——流量是多，可要是龟速，怎么用得完呢？
 
 第三要搞清的，是自己的设备情况。
 
@@ -162,7 +162,7 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 
 除了 Shadowsocks 外，还有不少其他的工具和方案可选。比如说我知道某位大佬使用 [Google Fi](https://fi.google.com/about) 来实现稳定访问全球互联网，不过这服务相当贵，一个月起价 $20.00，只有 6 GB 的流量，超出之后 $10.00/GB，最少计费单位 $1.00（我研究之后感觉大佬就是大佬，还是要学习一个，要努力提升自己），这种费用实在是不易落地；再比如我知道还有很多人在用 VPN，但 VPN 是全局的，启用后所有的网络连接全走 VPN 通道算流量，用起来不够灵活，还有，因为 VPN 连接特征鲜明，很容易被识别阻断，所以有些时候连接会不稳定；还有购买 VPS 然后用 SSH -D 转发流量的方案，但和 VPN 一样，因为其连接特征鲜明，很容易被识别阻断，根本不能稳定使用。综合考虑，我现在选择了 Shadowsocks。
 
-用 Shadowsocks 就会遇到选择服务商的问题，好在有位前辈专门做了相关的评测⸺毒药机场简介（<https://duyaoss.com/>，备用 GitHub 链接为 <https://github.com/DuyaoSS/SSR/issues/1>）。
+用 Shadowsocks 就会遇到选择服务商的问题，好在有位前辈专门做了相关的评测——毒药机场简介（<https://duyaoss.com/>，备用 GitHub 链接为 <https://github.com/DuyaoSS/SSR/issues/1>）。
 
 在具体挑选哪家服务商这点上，我现在的观点是这样的：
 
@@ -200,7 +200,7 @@ Shadowsocks 使用起来并没有什么难度（可参考[项目页的使用说�
 
 #### 4.2 手册话语
 
-手册当中的不少文本有待推敲，比如⸺
+手册当中的不少文本有待推敲，比如——
 
 - 标点
 
@@ -257,7 +257,7 @@ GitHub 的基本使用
 
 ### 3. 收获总结
 
-1. 明确了使用 Git 和 GitHub 的目的⸺Git 用于版本控制，GitHub 用于网络协作；
+1. 明确了使用 Git 和 GitHub 的目的——Git 用于版本控制，GitHub 用于网络协作；
 2. 掌握了拉取请求（Pull Request）相关的操作；
 3. 了解了 GitHub 的工作流程。
 
@@ -297,7 +297,7 @@ Issue 的位置与“参考资料2”中的截图不一致，应是 GitHub 改�
 #### 4.7 “任务5.3 通过 Github Desktop 将自己账户下 fork 的作业仓库 clone 到本地电脑”
 
 1. 这一步耗时甚久，大约 180 MB 的文件，下载速度只有 10~20 KB/s，前后花了约两个小时，手册应该对这种情况予以提醒；
-2. Google 了一下，知道了出现这种情况的实际原因⸺ GitHub 相关的一些域名被限制了（如 <http://github.global.ssl.fastly.net>）；
+2. Google 了一下，知道了出现这种情况的实际原因—— GitHub 相关的一些域名被限制了（如 <http://github.global.ssl.fastly.net>）；
 3. 不同人给了不同的解决方案，如：改 hosts，利用开源中国提供的代码仓库（码云 Gitee）转移，给 GitHub Desktop 设置代理；
 4. 个人认为相对彻底的解决方案应该是 GitHub Desktop 整体走代理，方法有两种，一是开 VPN，二是配置 GitHub Desktop；
 5. 考虑眼下的实际情况，VPN 不算靠谱，所以就只能配置 GitHub Desktop 了，试验发现，GitHub Desktop 不从系统设置中取代理服务器，用修改配置文件的方法才能设置代理
@@ -372,9 +372,9 @@ Issue 的位置与“参考资料2”中的截图不一致，应是 GitHub 改�
 
 这个要求事实上是暗示要安装 Anaconda3，而非 Anaconda2。实际上现在在 Anaconda 官方网站的[下载页面](https://www.anaconda.com/distribution/)上直接下载的 Windows 版安装包就是 Anaconda3，但助教为了方便学员，特别提供了[清华大学开源软件镜像站的 Anaconda 下载页面](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/?C=M&O=D)，这个页面上有各种版本的 Anaconda，我就多想了些，觉得 Anaconda 官方网站应该也有类似的下载页面，又回忆起 2015 年的 XcodeGhost 事件，认为从安全的角度考虑，能用官方下载就不用第三方下载，就算用第三方，下载后也要想办法和官方提供的包进行 MD5 对照检查。在这种思路的引导下，我找到了 Anaconda 官方网站的所有版本下载页面（<https://repo.anaconda.com/archive/>），这里有各种版本及其 MD5，我就从这个页面下载了最靠上的 64 位 Windows 版安装包，下载的时候完全没有意识到这是个 Anaconda2 的包。
 
-下载完成后我就一股脑完成了安装，安装界面上的 Python 2.7 也没有警示到我，直到有同学在学习群里贴安装截图询问的时候，我才发觉不对⸺为什么他的截图上显示的是“Anaconda3”，而我这里是“Anaconda2”？有什么区别？
+下载完成后我就一股脑完成了安装，安装界面上的 Python 2.7 也没有警示到我，直到有同学在学习群里贴安装截图询问的时候，我才发觉不对——为什么他的截图上显示的是“Anaconda3”，而我这里是“Anaconda2”？有什么区别？
 
-快速 Google 了一下我就明白了，我弄错安装包了，而且更无奈的是，Anaconda2 和 Anaconda3 没法共存，所以我能做的就是⸺卸载 Anaconda2，另装 Anaconda3。好在我发现得早，没做更多的设置，也就没有太多的返工。
+快速 Google 了一下我就明白了，我弄错安装包了，而且更无奈的是，Anaconda2 和 Anaconda3 没法共存，所以我能做的就是——卸载 Anaconda2，另装 Anaconda3。好在我发现得早，没做更多的设置，也就没有太多的返工。
 
 另外，我在搜索的过程中，发现了另一个 Python 3.x 强于 Python 2.7 的地方：多语言支持，简单说，就是中文支持更好。我觉得就这一条也值得用 Python 3.x。
 
@@ -389,7 +389,7 @@ PATH 指的是“环境变量”，很多人都没听说过这个东西，所以
 
 设置环境变量的目的，是让某个位置的程序在任何位置都能运行。
 
-举例来说，装好 Anaconda3 后，随带的 Python 所在的路径是 <code>C:\Users\\<<em>UserName</em>>\\Anaconda3\python.exe</code>，在没有设置环境变量的情况下，Python 只能在这个文件夹下运行，在其他位置运行⸺比如 GitHub Desktop 管理的 `hello-world` 文件夹 <code>C:\Users\\<<em>UserName</em>>\\Documents\GitHub\hello-world\\</code> ⸺的时候，需要输入完整的路径才可以。也就是说，运行一下“Hello, World!”程序，就需要在其所在的文件夹输入这样的指令：
+举例来说，装好 Anaconda3 后，随带的 Python 所在的路径是 <code>C:\Users\\<<em>UserName</em>>\\Anaconda3\python.exe</code>，在没有设置环境变量的情况下，Python 只能在这个文件夹下运行，在其他位置运行——比如 GitHub Desktop 管理的 `hello-world` 文件夹 <code>C:\Users\\<<em>UserName</em>>\\Documents\GitHub\hello-world\\</code> ——的时候，需要输入完整的路径才可以。也就是说，运行一下“Hello, World!”程序，就需要在其所在的文件夹输入这样的指令：
 <pre>
 <code>C:\Users\<<em>UserName</em>>\Anaconda3\python.exe hello-world.py</code>
 </pre>
@@ -400,7 +400,7 @@ PATH 指的是“环境变量”，很多人都没听说过这个东西，所以
 </pre>
 影响其实还不仅如此，不设置环境变量的话，很多程序自动化的功能，都会因为找不到需要的文件失效，所以设置环境变量是必不可少的一步。
 
-Anaconda3 在安装的时候对此有所提示⸺  
+Anaconda3 在安装的时候对此有所提示——  
 ![Anaconda3_PATH提示](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Anaconda3_PATH.png)  
 不过按照安装包的说法，是不建议使用上面这个复选框的，我就选择了安装完成后手动设置。
 
@@ -470,7 +470,7 @@ iv. 建议在程序开头用注释的形式写明程序用途，如
 
 好在笑来老师写过一篇《[JupyterLab 的安装与配置](https://github.com/selfteaching/the-craft-of-selfteaching/blob/master/T-appendix.jupyter-installation-and-setup.ipynb)》，从安装 Anaconda 开始讲了 JupyterLab 的配置过程。
 
-可我照着做的时候遇到了网络错误，痛快解决还是要设置代理⸺  
+可我照着做的时候遇到了网络错误，痛快解决还是要设置代理——  
 i. conda 代理  
 用文本编辑器打开 <code>C:\Users\\<<em>UserName</em>>\\.condarc</code> 文件（<code><<em>UserName</em>></code> 是自己的账户），在结尾添加代理，如
 <pre>
@@ -716,7 +716,7 @@ print(eval(input()))
  3. 显示的形式不太美观。
  4. 可能有安全隐患。
 
-第一个问题。我一开始参考了上面提到了《[如何在Python 3中做一个简单的计算器程序](https://www.howtoing.com/how-to-make-a-simple-calculator-program-in-python-3)》一文，另外加了个函数 `again()` 专门用于在计算完成后询问是否要计算其他算式，输入 `Y` 就重新开始计算，输入 `N` 就退出。试了几次后觉得这样太繁琐了⸺每次计算完都得另外按个字母，简洁的方法应该是，计算完直接开始下一次计算，给某个特定输入就退出。  
+第一个问题。我一开始参考了上面提到了《[如何在Python 3中做一个简单的计算器程序](https://www.howtoing.com/how-to-make-a-simple-calculator-program-in-python-3)》一文，另外加了个函数 `again()` 专门用于在计算完成后询问是否要计算其他算式，输入 `Y` 就重新开始计算，输入 `N` 就退出。试了几次后觉得这样太繁琐了——每次计算完都得另外按个字母，简洁的方法应该是，计算完直接开始下一次计算，给某个特定输入就退出。  
 我又看了一遍文档，注意到了 `while`，搜索之后从《[Python While 循环语句](https://www.runoob.com/python/python-while-loop.html)》知道了，用 `while 1:` 可以实现无限循环，结合 `if` 和 `break` 就可以实现输入某个特定字母后退出。
 
 第二个问题。我在手册给出的《[X分钟速成Y，其中 Y=python3](https://learnxinyminutes.com/docs/zh-cn/python3-cn/)》一文中找到了 `try/except` 块的介绍，又通过参考《[Python 异常处理](https://www.runoob.com/python/python-exceptions.html)》一文，外加试错，找了 3 个特定的错误情况，设定输出错误提示并重新开始循环，避免了意外的报错退出。
@@ -737,8 +737,7 @@ else:
         print("c")
 ```
 
-在网页上看似乎没有什么问题，但贴到 VS Code 里就无法正常运行。它在 VS Code 里可能长这样：
-
+在网页上看似乎没有什么问题，但贴到 VS Code 里就无法正常运行。它在 VS Code 里可能长这样：  
 ![制表符和空格对比](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_0.png)
 
 注意这里对齐不一致了，出现这样的问题，是由于代码编写时混用了制表符（`↹`，即按 <kbd>Tab</kbd> 键输出的字符）和空格（`␣`，即按 <kbd>　　</kbd> 键输出的字符）的缘故。
@@ -749,10 +748,13 @@ else:
 
 在 VS Code 里打开静态程序分析工具的方法是，在编辑区点击鼠标右键，再点击菜单里的【命令面板...】（或按快捷键 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>），输入 `Linter`，点击“Python: 选择 Linter 插件”，再点击要启用的插件即可。可选择的插件中，“pylint”是 Python 扩展所带的插件，一般可以直接使用，其他插件各有长处，可以按需选择，选择后可能会弹出提示告知需要安装，根据提示操作即可。我个人选择了分析内容相对更多的“[flake8](https://pypi.org/project/flake8/)”插件（除了语法检查外，还有代码风格检查）。
 
-启用了 flake8 插件后，这段代码出现了多处报错（显示为黄色和红色的波浪线）。
+启用了 flake8 插件后，这段代码出现了多处报错（显示为黄色和红色的波浪线）——  
 ![制表符和空格对比报错](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_1.png)
 
-有
+混用了制表符和空格的代码，就算是看上去对齐了，也会报错——  
+![制表符和空格对比报错](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_1.png)
+
+把
 
 #### 总结
 
@@ -797,7 +799,7 @@ else:
 
 #### 4.2 不同的输出形式
 
-任务中的要求输出是这样的⸺  
+任务中的要求输出是这样的——  
 
 ![九九乘法表（原始）](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/9x9_Table_0.png)
 
@@ -813,7 +815,7 @@ else:
 2. 把 `print()` 里的“*”改成“×”即可；
 3. 把 `print()` 里的变量顺序调整一下即可。
 
-除此之外，我还试了一下另一个方向的九九表⸺
+除此之外，我还试了一下另一个方向的九九表——
 
 ![九九乘法表（转向）](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/9x9_Table_1.png)
 
@@ -945,7 +947,7 @@ else:
 
 1. **后向引用**  
    我认为包含撇号（’）的单词（如 ’s、’re、don’t 等），应该单独特别处理，而非简单地和它周围的词混在一起。举例来说，“Let’s”应该断成“Let”和“’s”，“don’t”就应该是一个整体。  
-   好在要处理的文本只有 3 个撇号，都是断开就行的，我就简化处理了⸺在撇号之前加空格把它和关联单词分开。  
+   好在要处理的文本只有 3 个撇号，都是断开就行的，我就简化处理了——在撇号之前加空格把它和关联单词分开。  
    完成这个任务需要使用“后向引用”，其默认的表达方式应该是类似“`\1`”、“`\2`”这样的，但我调了数次都报错，又作了一番功课才明白在这里应该用“`\\1`”、“`\\2`”。  
    捎带要提一下的是，VS Code 里的查找/替换功能也可以用正则表达式，但它的后向引用要写成“`$1`”、“`$2`”这种形式。
 2. **转义序列**  
@@ -1024,7 +1026,7 @@ else:
 
 切片是从字符串、列表、元组中抽取部分内容的操作。它很常用，不过有些地方会让人有些困惑，记录如下。
 
-首先要明确每一个元素的位置编号，以列表 `li = ['A', 'B', 'C', 'D', 'E', 'F', 'G']` 为例⸺
+首先要明确每一个元素的位置编号，以列表 `li = ['A', 'B', 'C', 'D', 'E', 'F', 'G']` 为例——
 
 |列表元素|'A'|'B'|'C'|'D'|'E'|'F'|'G'|
 |:-----:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -1045,7 +1047,7 @@ else:
 - 所用位置编号可以超出列表的元素位置编号；
 - 所有的冒号两侧都没有空格。
 
-还以列表 `li = ['A', 'B', 'C', 'D', 'E', 'F', 'G']` 为例⸺
+还以列表 `li = ['A', 'B', 'C', 'D', 'E', 'F', 'G']` 为例——
 
 |<span style="white-space: nowrap;">行号</span>|<span style="white-space: nowrap;">代码　　　　　</span>|<span style="white-space: nowrap;">结果　　　　　　　　　　　　　　　　　　</span>|<span style="white-space: nowrap;">注释</span>|
 |:--:|----|----|----|
@@ -1080,7 +1082,7 @@ else:
 
 另可参考：  
 [Python 教程·高级特性·切片](https://www.liaoxuefeng.com/wiki/1016959663602400/1017269965565856)  
-[贝斯狸的 Python 之旅⸺深入切片操作及原理](https://juejin.im/post/5b5a0c316fb9a04fb4016e19)  
+[贝斯狸的 Python 之旅——深入切片操作及原理](https://juejin.im/post/5b5a0c316fb9a04fb4016e19)  
 [全面深入彻底理解 Python 切片操作](https://blog.csdn.net/xpresslink/article/details/77727507)  
 [Python 中 list 的切片细节](https://blog.csdn.net/hengyunabc/article/details/6540157)  
 [Python 中的列表（list）切片详解](https://www.cnblogs.com/xuchunlin/p/6045282.html)
@@ -1112,7 +1114,7 @@ Python 里可用的转换函数有这些：
 |`oct(x)`                 |将一个整数转换为一个八进制字符串|
 |`hex(x)`                 |将一个整数转换为一个十六进制字符串|
 
-这里的 `eval(str)` 在第 3 天做计算器的时候也提到过。`str(x)` 和 `repr(x)` 有联系也有区别，具体可参见叶俊贤的《[Python 中 `str()` 与 `repr()` 函数的区别](https://www.jianshu.com/p/2a41315ca47e)》一文。还有一些数据类型转换的细节，可以参考范桂飓的《[Python基本语法⸺强制数据类型转换](https://blog.csdn.net/Jmilk/article/details/49720611)》一文和 Davidham 的《[Python 中的强制类型转换](https://www.jianshu.com/p/bc57ad6f35c4)》一文。
+这里的 `eval(str)` 在第 3 天做计算器的时候也提到过。`str(x)` 和 `repr(x)` 有联系也有区别，具体可参见叶俊贤的《[Python 中 `str()` 与 `repr()` 函数的区别](https://www.jianshu.com/p/2a41315ca47e)》一文。还有一些数据类型转换的细节，可以参考范桂飓的《[Python基本语法——强制数据类型转换](https://blog.csdn.net/Jmilk/article/details/49720611)》一文和 Davidham 的《[Python 中的强制类型转换](https://www.jianshu.com/p/bc57ad6f35c4)》一文。
 
 其他参考资料：  
 《[Python进阶](http://interpy.eastlakeside.com/)》（[*Intermediate Python*](http://book.pythontips.com)），穆罕默德·耶苏布·乌拉·哈立德（[Muhammad Yasoob Ullah Khalid](https://yasoob.me/)）著，刘宇（[@liuyu](https://github.com/liuyu)），老高（[@spawnris](https://github.com/spawnris)），大牙码特（[@suqi](https://github.com/suqi)），明源（[@muxueqz](https://github.com/muxueqz)）等译  
@@ -1153,7 +1155,7 @@ Python 里可用的转换函数有这些：
 
 #### 4.1 函数的定义和使用
 
-定义函数使用这样的语法⸺
+定义函数使用这样的语法——
 
 ```Python
 def function_name(parameters):
