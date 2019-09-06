@@ -555,7 +555,7 @@ c.NotebookApp.browser = 'Kinza'
    ```
 
 4. **完成服务设置**  
-   打开注册表编辑器（【开始】-【运行】-【`Regedit`】），定位到：
+   打开注册表编辑器（【![Win][Windows_Logo_12px] 开始】-【运行】- 输入 `Regedit` - 按 <kbd>↵ Enter</kbd>），定位到：
 
    ```text
    计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\JupyterLab
@@ -570,7 +570,7 @@ c.NotebookApp.browser = 'Kinza'
    注意 <code><<em>UserName</em>></code> 要换成自己的账户名，所有的反斜杠都是两个。
    ![JupyterLab服务_注册表设置](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/JupyterLab_Server_0.png)
 5. **启动服务**  
-   打开服务（【开始】-【Windows 管理工具】-【服务】），可找到其中 JupyterLab 项，将其启动类型设置为“自动”，再启动这个服务，以后就可以不通过 Anaconda，直接在浏览器里访问 <http://localhost:8888/lab?> 来使用 JupyterLab 了。
+   打开服务（【![Win][Windows_Logo_12px] 开始】-【Windows 管理工具】-【服务】），可找到其中 JupyterLab 项，将其启动类型设置为“自动”，再启动这个服务，以后就可以不通过 Anaconda，直接在浏览器里访问 <http://localhost:8888/lab?> 来使用 JupyterLab 了。
    ![JupyterLab服务](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/JupyterLab_Server_1.png)
 
 注意，服务和进程并不完全关联，启动服务会启动 JupyterLab 进程，但停止服务并不会终止进程，要彻底退出，需要在停止服务后再在管理员身份的命令提示符中运行 `TASKKILL /F /IM jupyter.exe /T` 杀掉进程。如果在停止服务前杀掉了进程，还需要再停止服务，才能重新启动服务。
@@ -743,7 +743,7 @@ else:
 在网页上看似乎没有什么问题，但贴到 VS Code 里就无法正常运行。它在 VS Code 里可能长这样：  
 ![制表符和空格对比](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_0.png)
 
-注意这里对齐不一致了，出现这样的问题，是由于代码编写时混用了制表符（`↹`，即按 <kbd>Tab</kbd> 键输出的字符）和空格（`␣`，即按 <kbd>　　</kbd> 键输出的字符）的缘故。
+注意这里对齐不一致了，出现这样的问题，是由于代码编写时混用了制表符（`	`，即按 <kbd>Tab ↹</kbd> 键输出的字符）和空格（` `，即按 <kbd>Space</kbd> 键输出的字符）的缘故。
 
 这种情况在自己写代码的时候并不多见，VS Code 为了避免这种问题，特意在设置里默认把制表符替换成了空格（通过菜单上的【文件(F)】-【首选项】-【设置】，或按快捷键 <kbd>Ctrl</kbd> + <kbd>,</kbd> 就能看到）。但当我们从各种途径复制粘贴代码的时候，难免会把不同来源的代码混在一起，继而出现混用制表符和空格的问题。
 
@@ -1247,7 +1247,7 @@ def function_name(parameters):
 - `function_suite` 是函数体，也就是函数所实现功能的代码。  
   这部分代码和平常写的代码基本一致，需要注意的地方有：  
   i. 缩进  
-      整段代码至少缩进 1 个定长（《[*PEP 8*](https://www.python.org/dev/peps/pep-0008/)》要求[使用 4 个空格](https://www.python.org/dev/peps/pep-0008/#id17)，VS Code 设置无误的话，按 1 次 <kbd>Tab</kbd> 键就可以输入 4 个空格）。  
+      整段代码至少缩进 1 个定长（《[*PEP 8*](https://www.python.org/dev/peps/pep-0008/)》要求[使用 4 个空格](https://www.python.org/dev/peps/pep-0008/#id17)，VS Code 设置无误的话，按 1 次 <kbd>Tab ↹</kbd> 键就可以输入 4 个空格）。  
   ii. 变量  
       函数内的变量和函数外的变量不同，就算是名字一样，也是各自独立的，比如这样一段代码：
   iii. 空行
@@ -1271,3 +1271,19 @@ Python 可以把任何一个 `.py` 文件当作模块进行加载，使用的语
 #### 总结
 
 ------
+
+<!-- 复用的图片和链接 -->
+
+<!-- 
+![Win][Windows_Logo_20px]
+![Win][Windows_Logo_16px]
+![Win][Windows_Logo_12px]
+![Win][Windows_Logo_8px]
+![Win][Windows_Logo_6px]
+ -->
+
+[Windows_Logo_20px]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Windows_logo_2012-Black.svg/20px-Windows_logo_2012-Black.svg.png
+[Windows_Logo_16px]: https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Windows_logo_2012-Black.svg/16px-Windows_logo_2012-Black.svg.png
+[Windows_Logo_12px]: https://raw.githubusercontent.com/shen-huang/img/master/Logo/Windows_logo_2012-Black_12px.svg?sanitize=true
+[Windows_Logo_8px]: https://raw.githubusercontent.com/shen-huang/img/master/Logo/Windows_logo_2012-Black_8px.svg?sanitize=true
+[Windows_Logo_6px]: https://raw.githubusercontent.com/shen-huang/img/master/Logo/Windows_logo_2012-Black_6px.svg?sanitize=true
