@@ -16,14 +16,14 @@ import sys
 
 for i in range(1, 10):
     for j in range(1, i+1):
-        print("{}×{}={}".format(j, i, i*j), end='\t')
+        print(j, '×', i, '=', i*j, sep='', end='\t')
     print()
 print()
 
 
 # 使用 while 循环打印九九乘法表并用条件判断把偶数行去掉
 
-# 直接输出会出现空行，故构造一个类，重定向输出，再去掉多余的空行
+# 原始输出会出现空行，故构造一个类，重定向输出，再去掉多余的空行
 
 
 class FakeOut:
