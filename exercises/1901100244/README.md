@@ -1092,8 +1092,8 @@ else:
 
 还以列表 `li = ['A', 'B', 'C', 'D', 'E', 'F', 'G']` 为例——
 
-|<span style="white-space: nowrap;">行⁠号</span>|<span style="white-space: nowrap;">代⁠码　　　　　</span>|<span style="white-space: nowrap;">结⁠果　　　　　　　　　　　　　　　　　　</span>|<span style="white-space: nowrap;">注⁠释</span>|
-|:--:|----|----|----|
+|<span style="white-space: nowrap;">行⁠号</span>|<span style="white-space: nowrap;">代⁠码　　　　</span>|<span style="white-space: nowrap;">结⁠果　　　　　　　　　　　　　　　　　</span>|<span style="white-space: nowrap;">注⁠释</span>|
+|:--:|:----|:----|:----|
 |1|`li[:]`|`['A', 'B', 'C', 'D', 'E', 'F', 'G']`|从列表左端取到列表右端，即取了整个列表|
 |2|`li[::1]`|`['A', 'B', 'C', 'D', 'E', 'F', 'G']`|从列表左端取到列表右端，步伐为“1”，即取了整个列表|
 |3|`li[::2]`|`['A', 'C', 'E', 'G']`|从列表左端取到列表右端，步伐为“2”，即每 2 个元素取 1 个元素，取出第 0、2、4、6 号元素|
