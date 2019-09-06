@@ -402,7 +402,7 @@ PATH 指的是“环境变量”，很多人都没听说过这个东西，所以
 影响其实还不仅如此，不设置环境变量的话，很多程序自动化的功能，都会因为找不到需要的文件失效，所以设置环境变量是必不可少的一步。
 
 Anaconda3 在安装的时候对此有所提示——  
-<img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Anaconda3_PATH.png" width="998px" alt="Anaconda3_PATH提示" />
+<img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Anaconda3_PATH.png" width="75%" alt="Anaconda3_PATH提示" />
 不过按照安装包的说法，是不建议使用上面这个复选框的，我就选择了安装完成后手动设置。
 
 设置的方法是：  
