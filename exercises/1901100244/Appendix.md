@@ -593,6 +593,7 @@ CLI 和 GUI 的历史沿革。
   - Python 列表 合并
   - Python 列表推导式
   - 正则表达式 贪婪模式
+  - Python print 输出重定向
 - **Windows 系统相关**
   - 右键 加入 命令提示符
   - py 命令无法运行
