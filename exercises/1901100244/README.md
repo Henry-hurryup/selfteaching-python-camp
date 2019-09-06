@@ -1092,7 +1092,7 @@ else:
 
 还以列表 `li = ['A', 'B', 'C', 'D', 'E', 'F', 'G']` 为例——
 
-|<span style="white-space: nowrap;">行号</span>|<span style="white-space: nowrap;">代码　　　　　</span>|<span style="white-space: nowrap;">结果　　　　　　　　　　　　　　　　　　</span>|<span style="white-space: nowrap;">注释</span>|
+|<span style="white-space: nowrap;">行⁠号</span>|<span style="white-space: nowrap;">代⁠码　　　　　</span>|<span style="white-space: nowrap;">结⁠果　　　　　　　　　　　　　　　　　　</span>|<span style="white-space: nowrap;">注⁠释</span>|
 |:--:|----|----|----|
 |1|`li[:]`|`['A', 'B', 'C', 'D', 'E', 'F', 'G']`|从列表左端取到列表右端，即取了整个列表|
 |2|`li[::1]`|`['A', 'B', 'C', 'D', 'E', 'F', 'G']`|从列表左端取到列表右端，步伐为“1”，即取了整个列表|
