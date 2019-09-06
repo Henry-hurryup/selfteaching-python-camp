@@ -551,6 +551,9 @@ CLI 和 GUI 的历史沿革。
   - Python 无限循环
   - Python sin cos
   - Python 乘方
+  - Python continue break pass
+  - Python print 输出重定向
+  - Python 调用类中的函数
   - Python 替换文件内容
   - Python split
   - Python split 多个分隔符
@@ -593,8 +596,6 @@ CLI 和 GUI 的历史沿革。
   - Python 列表 合并
   - Python 列表推导式
   - 正则表达式 贪婪模式
-  - Python print 输出重定向
-  - Python 调用类中的函数
 - **Windows 系统相关**
   - 右键 加入 命令提示符
   - py 命令无法运行
