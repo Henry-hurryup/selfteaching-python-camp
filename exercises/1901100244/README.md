@@ -403,7 +403,7 @@ PATH 指的是“环境变量”，很多人都没听说过这个东西，所以
 
 Anaconda3 在安装的时候对此有所提示——  
 <img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Anaconda3_PATH.png" width="50%" alt="Anaconda3_PATH提示" />  
-不过按照安装包的说法，是不建议使用上面这个复选框的，我就选择了安装完成后手动设置。
+不过按照安装包的说法，是不建议使用上面这个复选框的（选中后可能导致卸载或重装 Anaconda 时出现问题），我就选择了安装完成后手动设置。
 
 设置的方法是：  
 i. 依次打开【控制面板】-【系统和安全】-【系统】-【高级系统设置】-【环境变量(<u>N</u>)...】  
@@ -420,15 +420,15 @@ C:\Users\<<em>UserName</em>>\Anaconda3\Library\mingw-w64\bin</code>
 
 #### 4.3 VS Code 的配置
 
-学习手册为这一部分给出的参考文档 [VS Code 官方配置 Python 环境教程](https://code.visualstudio.com/docs/python/environments)其实不大适用于这一阶段，说重一点，光这一篇教程就足以劝退不少新人了。
+学习手册为这一部分给出的参考文档《[VS Code 配置 Python 环境教程](https://code.visualstudio.com/docs/python/environments)》其实不大适用于这一阶段，说重一点，光这一篇教程就足以劝退不少新人了。
 
 其实如果按手册前文的要求，通过 Anaconda Navigator (Anaconda3) 安装好了 VS Code，那么 Python 的环境基本已经配置好了，更多的由于环境配置出现的问题，其实应该通过配置系统环境变量（见上文）解决。
 
-个人认为，为了 Python 配置 VS Code 更值得参考的文档是 [VS Code 扩展市场](https://code.visualstudio.com/docs/editor/extension-gallery)的介绍，和 [VS Code Python 入门教程](https://code.visualstudio.com/docs/python/python-tutorial)。
+个人认为，为了 Python 配置 VS Code 更值得参考的文档是《[VS Code 扩展市场](https://code.visualstudio.com/docs/editor/extension-gallery)》和《[VS Code Python 入门教程](https://code.visualstudio.com/docs/python/python-tutorial)》。
 
 扩展市场是发挥 VS Code 强大潜力不可或缺的一部分。其实从 Anaconda 装好 VS Code 后，Python 扩展已经默认安装了，故而只说 Python 的话，对这部分也可以不了解。不过如果需要其他功能，如 VS Code 的中文界面、Markdown 支持、颜色/图标等个性化界面配置、快捷键调整等等，都得靠从扩展市场装扩展才行，所以知道怎么操作扩展市场，是用好 VS Code 的重要一环。
 
-如果前面该做的步骤都做完了的话，[入门教程](https://code.visualstudio.com/docs/python/python-tutorial)里[先决条件（Prerequisites）](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)那部分可以跳过去，从[在项目（工作区）文件夹中启动VS Code（Start VS Code in a project (workspace) folder）](https://code.visualstudio.com/docs/python/python-tutorial#_start-vs-code-in-a-project-workspace-folder)往下看就行了。
+如果前面该做的步骤都做完了的话，《[VS Code Python 入门教程](https://code.visualstudio.com/docs/python/python-tutorial)》里《[先决条件](https://code.visualstudio.com/docs/python/python-tutorial#_prerequisites)》（*Prerequisites*）那部分可以跳过去，从《[在项目（工作区）文件夹中启动VS Code](https://code.visualstudio.com/docs/python/python-tutorial#_start-vs-code-in-a-project-workspace-folder)》（*Start VS Code in a project (workspace) folder*）往下看就行了。
 
 也不用看太细（太细也搞不明白），差不多照猫画虎弄弄就行。
 
@@ -692,15 +692,15 @@ Jupyter 从 IPython 衍生而来，现在的名字来源于其支持的核心编
 
 本着先易后难的原则，我参考了《[Python Program to Make a Simple Calculator](https://www.programiz.com/python-programming/examples/calculator)》、《[如何在Python 3中做一个简单的计算器程序](https://www.howtoing.com/how-to-make-a-simple-calculator-program-in-python-3)》、《[Python 简单计算器实现](https://www.runoob.com/python3/python3-calculator.html)》等文章，做了第一个版本，实现了：通过 3 次键盘输入，分别获取两个数字和运算符，然后输出运算结果，另外，在除数为 0 的时候，提示错误。
 
-我把这个版本交给教练后，教练表示这样就算完成任务了，但我觉得路数不大对，主要的原因是：操作不直观、和最初的想法距离较大。
+我把这个版本交给教练[](~星爵（GitHub [@XINGRUFANG](https://github.com/XINGRUFANG)）)后，教练表示这样就算完成任务了，但我觉得路数不大对，主要的原因是：操作不直观、和最初的想法距离较大。
 
 #### 4.3 通过搜索找到理想方法后逐步完善
 
 我在 ZingpLiu 的《[Python实现计算器](https://www.cnblogs.com/zingp/p/8666214.html)》一文中读到了这样一句话：
 
-> 前几天有个面试题目：计算字符串"1 + (5 - 2) * 3"，结果为10，不能用`eval()`。
+> 前几天有个面试题目：计算字符串"1 + (5 - 2) * 3"，结果为 10，不能用 `eval()`。
 
-这个“**不能用`eval()`**”引起了我的注意，我就去查了一下 `eval()` 是什么，从 [Python eval() 函数](https://www.runoob.com/python/python-func-eval.html)的介绍页面了解到，`eval()` 就是把其中的表达式直接给 Python 解释器并输出计算结果，这其实就是我之前想找的方法。
+这个“**不能用** `eval()`”引起了我的注意，我就去查了一下 `eval()` 是什么，从 [Python eval() 函数](https://www.runoob.com/python/python-func-eval.html)的介绍页面了解到，`eval()` 就是把其中的表达式直接给 Python 解释器并输出计算结果，这其实就是我之前想找的方法。
 
 `eval()` 加上 `input()` 和 `print()`，一行代码就可以实现计算器了：
 
@@ -708,7 +708,7 @@ Jupyter 从 IPython 衍生而来，现在的名字来源于其支持的核心编
 print(eval(input()))
 ```
 
-我问了一下教练，这样算不算完成任务，教练告诉我也算，“任务不是目的，目的是学习知识”。
+我问了一下教练[](~星爵（GitHub [@XINGRUFANG](https://github.com/XINGRUFANG)）)，这样算不算完成任务，教练告诉我也算，“任务不是目的，目的是学习知识”。
 
 不过我觉得，这样完成任务，简洁是简洁了，但还是有些遗憾，比如：
 
@@ -724,7 +724,9 @@ print(eval(input()))
 
 第三个问题。我通过调整 `print()` 函数的格式化做了优化。
 
-第四个问题。由于 `eval()` 是直接把其中的字符串当作输入值传给解释器了，这就可能遇到某些别有用心的人构造特别的输入，从这里入手访问甚至读写网站的文件，这一安全隐患通常是靠限制 `eval()` 可接受的内容来避免的。我在这里通过 `import` 引入了 `math` 模块，再用其构造了字典，继而约束了 `eval()` 可接受的输入。
+第四个问题。由于 `eval()` 是直接把其中的字符串当作输入值传给解释器了，这就可能遇到某些别有用心的人构造特别的输入，从这里入手访问甚至读写网站的文件，这一安全隐患通常是靠限制 `eval()` 可接受的内容来避免的。我在这里通过 `import` 引入了 `math` 模块，再用其构造了字典，继而约束了 `eval()` 可接受的输入。  
+另外，xkcd 上的漫画《[*Exploits of a Mom*](https://xkcd.com/327/)》对这类安全隐患给出了个相当传神的感性表达：  
+[![Little Bobby Tables](https://imgs.xkcd.com/comics/exploits_of_a_mom.png "explain xkcd: Little Bobby Tables")](https://www.explainxkcd.com/wiki/index.php/Little_Bobby_Tables)
 
 #### 4.4 一不留神就可能会导致错误的缩进
 
