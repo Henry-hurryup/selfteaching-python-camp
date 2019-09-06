@@ -402,7 +402,7 @@ PATH 指的是“环境变量”，很多人都没听说过这个东西，所以
 影响其实还不仅如此，不设置环境变量的话，很多程序自动化的功能，都会因为找不到需要的文件失效，所以设置环境变量是必不可少的一步。
 
 Anaconda3 在安装的时候对此有所提示——  
-<img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Anaconda3_PATH.png" width="50%" alt="Anaconda3_PATH提示" />  
+<img src="https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Anaconda3_PATH.png" width="60%" alt="Anaconda3_PATH提示" />  
 不过按照安装包的说法，是不建议使用上面这个复选框的（选中后可能导致卸载或重装 Anaconda 时出现问题），我就选择了安装完成后手动设置。
 
 设置的方法是：  
@@ -1139,7 +1139,7 @@ else:
 Python 里可用的转换函数有这些：
 
 |<span style="white-space: nowrap;">函数　　　　　　　　　　</span>|说明|
-|----|----|
+|:----|:----|
 |`int(x[, base])`         |将 `x` 转换为一个整数，**强制类型转换**|
 |`long(x[, base])`        |将 `x` 转换为一个长整数|
 |`float(x)`               |将 `x` 转换到一个浮点数，**强制类型转换**|
