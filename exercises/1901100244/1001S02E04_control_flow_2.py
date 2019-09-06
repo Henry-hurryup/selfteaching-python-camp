@@ -2,72 +2,50 @@
 
 # Filename : 1001S02E04_control_flow_2.py
 # author by : @shen-huang
-# reference : [Python 3 print 重定向输出的几种方法]
-#             (https://blog.csdn.net/qq_35528593/article/details/74453104)
-#             [Python 3 进阶 —— print 打印和输出]
-#             (https://shockerli.net/post/python3-print/)
-
-# 打印两种九九乘法表
-
-import sys
-
-
-# 使用 for...in 循环打印九九乘法表
-
-for i in range(1, 10):
-    for j in range(1, i+1):
-        print(j, '×', i, '=', i*j, sep='', end='\t')
-    print()
-print()
-
+# reference : [Python:文件的读取、创建、追加、删除、清空]
+#             (https://blog.csdn.net/u010281626/article/details/53908099)
+#             [Python print 输出到文件]
+#             (https://blog.csdn.net/yageeart/article/details/38386121)
+#             [Python 读取文件的三种方式]
+#             (https://zhuanlan.zhihu.com/p/42784651)
+#             [Python 指定编码格式创建、打开文件]
+#             (https://blog.csdn.net/damys/article/details/79352410)
 
 # 使用 while 循环打印九九乘法表并用条件判断把偶数行去掉
 
-# 原始输出会出现空行，故构造一个类，重定向输出，再去掉多余的空行
+import os
 
+# 原始输出会出现空行，故新建一个文件，重定向输出，再去掉多余的空行
 
-class FakeOut:
+# 新建一个文件
 
-    def __init__(self):
-        self.str = ''
-        self.n = 0
+f = open('f_temp.txt', 'w', encoding='utf-8')
 
-    def write(self, s):
-        self.str += s
-        self.n += 1
-
-    def show(self):  # 显示函数，非必须
-        print(self.str)
-
-    def clear(self):  # 清空函数，非必须
-        self.str = ''
-        self.n = 0
-
-
-# 修改标准输出实现重定向
-
-f_out = FakeOut()
-
-std_out = sys.stdout
-sys.stdout = f_out
-
-# 会出现空行的输出
+# 会出现空行的输出，将其重定向，存入文件
 
 i = 1
 while (i < 10):
     if i % 2 != 0:
         j = 1
         while j <= i:
-            print(j, '×', i, '=', i*j, sep='', end='\t')
+            print(j, '×', i, '=', i*j, sep='', end='\t', file=f)
             j += 1
     i += 1
-    print()
-print()
+    print(file=f)
+print(file=f)
 
-# 恢复标准输出
+# 关闭文件
 
-sys.stdout = std_out
+f.close()
 
-# 去掉多余的空行并输出
+# 打开文件，去掉多余的空行并输出，关闭文件
 
-print(f_out.str.replace("\n\n", "\n"))
+f = open('f_temp.txt', encoding='utf-8')
+
+print(f.read().replace('\n\n', '\n'))
+
+f.close()
+
+# 删除文件
+
+os.remove('f_temp.txt')
