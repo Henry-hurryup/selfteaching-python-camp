@@ -2,7 +2,7 @@
 
 # Filename : 1001S02E04_control_flow_2.py
 # author by : @shen-huang
-# reference : [Python:文件的读取、创建、追加、删除、清空]
+# reference : [Python：文件的读取、创建、追加、删除、清空]
 #             (https://blog.csdn.net/u010281626/article/details/53908099)
 #             [Python print 输出到文件]
 #             (https://blog.csdn.net/yageeart/article/details/38386121)
