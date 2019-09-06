@@ -157,7 +157,7 @@ Unicode 字符
 
 可以使用 HTML 的注释方式 `<!--  -->`，注意这种方式无法嵌套注释。
 
-另外可以利用空链接和引用链接的方式添加注释。
+另外可以利用空链接和引用链接的方式添加注释，注释中不能有一般的空格（“ ”）和非断开空格（“ ”），但可以使用 Figure space（“ ”）、Thin space（“ ”）、Narrow no-break space（“ ”）、Hair space（“ ”）。
 
 参见：  
 [在 Markdown 中写注释](https://www.imooc.com/article/23400)  
