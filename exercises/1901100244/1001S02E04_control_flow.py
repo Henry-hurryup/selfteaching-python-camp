@@ -10,9 +10,8 @@
 # 使用 for...in 循环打印九九乘法表
 
 for i in range(1, 10):
-    for j in range(1, 10):
-        if j <= i:
-            print("{0}*{1}={2}".format(i, j, i*j), end='   ')
+    for j in range(1, i+1):
+        print("{0}*{1}={2}".format(i, j, i*j), end='   ')
     print()
 print()
 
@@ -41,9 +40,8 @@ print("\n―――――――――――――――――――――――�
 # 修改为常见的九九表呈现方式
 
 for i in range(1, 10):
-    for j in range(1, 10):
-        if j <= i:
-            print("{0}×{1}={2}".format(j, i, i*j), end='\t')
+    for j in range(1, i+1):
+        print("{0}×{1}={2}".format(j, i, i*j), end='\t')
     print()
 print()
 
@@ -76,7 +74,7 @@ while (i < 10):
     j = 1
     while j <= i:
         if i % 2 != 0:
-            print(j, '×', i, '=', i*j, sep='', end='\t')
+            print("{0}×{1}={2}".format(j, i, i*j), end='\t')
             j += 1
         else:
             break
@@ -91,7 +89,7 @@ while (i < 10):
     j = 1
     if i % 2 != 0:
         while j <= i:
-            print(j, '×', i, '=', i*j, sep='', end='\t')
+            print("{0}×{1}={2}".format(j, i, i*j), end='\t')
             j += 1
         print()
     i += 1
@@ -105,12 +103,12 @@ while (i < 10):
     j = 1
     if i % 2 != 0:
         while j <= i:
-            print(j, '×', i, '=', i*j, sep='', end='\t')
+            print("{0}×{1}={2}".format(j, i, i*j), end='\t')
             j += 1
         print()
 print()
 
-# 考虑该表可能的实际用途，去掉了两数大小判断
+# 考虑该表可能的实际用途，去掉了两数大小比较的操作
 
 for i in range(1, 10):
     while i % 2 != 0:
@@ -120,11 +118,12 @@ for i in range(1, 10):
         break
 print()
 
-# 不同的循环方式，省去了两数大小判断
+# 不同的循环方式
 
 for i in range(1, 10):
-    for j in range(1, i+1):
-        print("{0}×{1}={2}".format(j, i, i*j), end='\t')
+    for j in range(1, 10):
+        if j <= i:
+            print("{0}×{1}={2}".format(j, i, i*j), end='\t')
     print()
 print()
 
