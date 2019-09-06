@@ -75,9 +75,10 @@
       - [4.1 字符串样本的形式](#41-%e5%ad%97%e7%ac%a6%e4%b8%b2%e6%a0%b7%e6%9c%ac%e7%9a%84%e5%bd%a2%e5%bc%8f)
       - [4.2 英文分词](#42-%e8%8b%b1%e6%96%87%e5%88%86%e8%af%8d)
       - [4.3 正则表达式](#43-%e6%ad%a3%e5%88%99%e8%a1%a8%e8%be%be%e5%bc%8f)
-      - [4.4 字典的统计和排序](#44-%e5%ad%97%e5%85%b8%e7%9a%84%e7%bb%9f%e8%ae%a1%e5%92%8c%e6%8e%92%e5%ba%8f)
-      - [4.5 切片的使用](#45-%e5%88%87%e7%89%87%e7%9a%84%e4%bd%bf%e7%94%a8)
-      - [4.6 不同类型的转换](#46-%e4%b8%8d%e5%90%8c%e7%b1%bb%e5%9e%8b%e7%9a%84%e8%bd%ac%e6%8d%a2)
+      - [4.4 推导式](#44-%e6%8e%a8%e5%af%bc%e5%bc%8f)
+      - [4.5 字典的统计和排序](#45-%e5%ad%97%e5%85%b8%e7%9a%84%e7%bb%9f%e8%ae%a1%e5%92%8c%e6%8e%92%e5%ba%8f)
+      - [4.6 切片的使用](#46-%e5%88%87%e7%89%87%e7%9a%84%e4%bd%bf%e7%94%a8)
+      - [4.7 不同类型的转换](#47-%e4%b8%8d%e5%90%8c%e7%b1%bb%e5%9e%8b%e7%9a%84%e8%bd%ac%e6%8d%a2)
       - [总结](#%e6%80%bb%e7%bb%93-5)
   - [DAY 06](#day-06)
     - [1. 学习内容](#1-%e5%ad%a6%e4%b9%a0%e5%86%85%e5%ae%b9-6)
@@ -743,8 +744,7 @@ else:
 在网页上看似乎没有什么问题，但贴到 VS Code 里就无法正常运行。它在 VS Code 里可能长这样：  
 ![制表符和空格对比](https://raw.githubusercontent.com/shen-huang/img/master/2019-08/Tab_and_Space_0.png)
 
-注意这里对齐不一致了，出现这样的问题，是由于代码编写时混用了制表符（`	` <code>&#9;</code>，即按 <kbd>Tab ↹</kbd> 键输出的字符）和空格（` `，即按 <kbd>Space</kbd> 键输出的字符）的缘故。
-
+注意这里对齐不一致了，出现这样的问题，是由于代码编写时混用了制表符（`	`，U+0009，即按 <kbd>Tab ↹</kbd> 键输出的字符）和空格（` `，U+0020，即按 <kbd>Space</kbd> 键输出的字符）的缘故。
 这种情况在自己写代码的时候并不多见，VS Code 为了避免这种问题，特意在设置里默认把制表符替换成了空格（通过菜单上的【文件(F)】-【首选项】-【设置】，或按快捷键 <kbd>Ctrl</kbd> + <kbd>,</kbd> 就能看到）。但当我们从各种途径复制粘贴代码的时候，难免会把不同来源的代码混在一起，继而出现混用制表符和空格的问题。
 
 要避免出现这种问题，首先得有认真细致的态度，同时相应的工具也是必不可少的。
@@ -971,7 +971,7 @@ else:
 
 简单的分词用 `split()` 函数就行，但本次用作分词的分隔符不只一个，故而选择通过加载正则表达式模块（`re`），通过 `re.split()` 函数完成分词。这里有两个要注意的地方：
 
-- 间隔符表达式如果带括号（(…)），生成的列表里就包括分隔符，反之则不包括；
+- 间隔符表达式如果带括号（`(…)`），生成的列表里就包括分隔符，反之则不包括；
 - 正则表达式字符串建议在前面加上标记 `r`，举例来说，我使用的表达式为 `r'(\s|,|\.|—)'`。
 
 更复杂的分词可以通过加载其他的分词工具完成，具体可以参见《[Python 文本数据分析初学指南](https://datartisan.gitbooks.io/begining-text-mining-with-python/)》的“[4.2 英文分词及词性标注](https://datartisan.gitbooks.io/begining-text-mining-with-python/第4章%20分词与词性标注/4.2%20英文分词及词性标注.html)”部分。
@@ -1007,7 +1007,11 @@ else:
    半角空格没有转义序列，要怎么匹配呢？查了好一会儿我才反应过来，直接输入“ ”就可以了……  
    顺便我还了解了一下各种不同编码的转义序列表达法，前面“`\u`”开头的那些字符串，就是 Unicode 编码的转义序列表达法，具体细节可以参见《[JavaScript 转义字符](https://www.cnblogs.com/zhankang/articles/4881314.html)》（[*JavaScript character escape sequences*](https://mathiasbynens.be/notes/javascript-escapes)），《[字符编码笔记：ASCII，Unicode 和 UTF-8](http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)》，《[Unicode 与 JavaScript 详解](http://www.ruanyifeng.com/blog/2014/12/unicode.html)》等文，具体字符的转换可以用站长之家提供的[Unicode编码转换](https://tool.chinaz.com/tools/unicode.aspx)工具。
 
-#### 4.4 字典的统计和排序
+#### 4.4 推导式
+
+
+
+#### 4.5 字典的统计和排序
 
 生成字典不难，有这么几个值得记录的点：
 
@@ -1065,7 +1069,7 @@ else:
    [Lambda 表达式有何用处？如何使用？](https://www.zhihu.com/question/20125256)  
    [Python `dict()` 函数](https://www.runoob.com/python/python-func-dict.html)
 
-#### 4.5 切片的使用
+#### 4.6 切片的使用
 
 切片是从字符串、列表、元组中抽取部分内容的操作。它很常用，不过有些地方会让人有些困惑，记录如下。
 
@@ -1130,7 +1134,7 @@ else:
 [Python 中 list 的切片细节](https://blog.csdn.net/hengyunabc/article/details/6540157)  
 [Python 中的列表（list）切片详解](https://www.cnblogs.com/xuchunlin/p/6045282.html)
 
-#### 4.6 不同类型的转换
+#### 4.7 不同类型的转换
 
 由数字构成的列表不能直接拼接成字符串，得把列表的每个元素都转成字符串才行。
 
