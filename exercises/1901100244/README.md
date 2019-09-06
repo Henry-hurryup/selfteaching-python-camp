@@ -1210,10 +1210,11 @@ def function_name(parameters):
 
 - `function_suite` 是函数体，也就是函数所实现功能的代码。  
   这部分代码和平常写的代码基本一致，需要注意的地方有：  
-  ⅰ. 缩进  
-      整段代码至少缩进 1 个定长（《[*PEP 8*](https://www.python.org/dev/peps/pep-0008/)》要求[使用 4 个空格](https://www.python.org/dev/peps/pep-0008/#id17)，VS Code 设置无误的话，按 1 次 <kbd>Tab</kbd> 键就可以输入 4 个空格）；  
-  ⅱ. 变量  
-  ⅲ. 空行
+  i. 缩进  
+      整段代码至少缩进 1 个定长（《[*PEP 8*](https://www.python.org/dev/peps/pep-0008/)》要求[使用 4 个空格](https://www.python.org/dev/peps/pep-0008/#id17)，VS Code 设置无误的话，按 1 次 <kbd>Tab</kbd> 键就可以输入 4 个空格）。  
+  ii. 变量  
+      函数内的变量和函数外的变量不同，就算是名字一样，也是各自独立的，比如这样一段代码：
+  iii. 空行
 
 #### 4.2 加载模块语句的使用
 
