@@ -1009,7 +1009,22 @@ else:
 
 #### 4.4 推导式
 
+生成列表的时候可以使用循环，如：
 
+```Python
+text = ['Life', 'is', 'short', 'you', 'need', 'Python', 'by', 'Bruce', 'Eckel']
+text2 = []
+for w in text:
+    if w.find('i') < 0:
+        text2.append(w)
+```
+
+也可以使用“列表推导式”（list comprehensions），上面的代码用列表推导式的话可以写成：
+
+```Python
+text = ['Life', 'is', 'short', 'you', 'need', 'Python', 'by', 'Bruce', 'Eckel']
+text2 = [w for w in text if w.find('i') < 0]
+```
 
 #### 4.5 字典的统计和排序
 
