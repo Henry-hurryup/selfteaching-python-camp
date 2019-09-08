@@ -1198,6 +1198,93 @@ print('\n'.join(['\t'.join(["{0}×{1}={2}".format(j, i, j*i)
       for j in range(1, 10) if j <= i]) for i in range(1, 10)]))
 ```
 
+但这种推导式已经相当复杂了，不易写也不易读，炫技尚可，实操还是尽量避免吧。
+
+列表推导式还有一种用法，是针对多重条件判断的，语法是：
+
+```Python
+new_list = [expression1 if condition else expression2 for i in old_list]
+```
+
+比如：
+
+```Python
+num_list = []
+for i in range(10):
+    if i < 5:
+        num_list.append(i*2)
+    else:
+        num_list.append(i*3)
+```
+
+可以写成：
+
+```Python
+num_list = [i*2 if i < 5 else i*3 for i in range(10)]
+```
+
+多重条件要把 `elif` 写成 `else if`，比如：
+
+```Python
+num_list = []
+for i in range(10):
+    if i < 5:
+        num_list.append(i*2)
+    elif i < 7:
+        num_list.append(i*3)
+    else:
+        num_list.append(i*4)
+```
+
+可以写成：
+
+```Python
+num_list = [i*2 if i < 5 else i*3 if i < 7 else i*4 for i in range(10)]
+```
+
+这种用法有一个坑：必须有 `else`！
+
+也就是说：
+
+```Python
+num_list = []
+for i in range(10):
+    if i < 5:
+        num_list.append(i*2)
+    elif i < 7:
+        num_list.append(i*3)
+```
+
+是**不能**这样写的：
+
+```Python
+num_list = [i*2 if i < 5 else i*3 if i < 7 for i in range(10)]
+```
+
+使用 `pass` 也**不行**：
+
+```Python
+num_list = [i*2 if i < 5 else i*3 if i < 7 else pass for i in range(10)]
+```
+
+可以通过多套一层推导式的方法勉强实现，但是实在不美观：
+
+```Python
+num_list = [x for x in
+            [i*2 if i < 5 else i*3 if i < 7 else False for i in range(10)]
+            if x is not False]
+```
+
+遇到这种情况，可能踏踏实实写循环，比强用推导式来得更好。
+
+与列表推导式类似的，还有字典推导式（dictionary comprehension）、集合推导式（set comprehensions）、生成器表达式（generator expression）。
+
+字典推导式用来生成字典，语法为：
+
+```Python
+new_dict = {k(x): v(x) for x in sequence if condition(x)}
+```
+
 #### 4.5 字典的统计和排序
 
 生成字典不难，有这么几个值得记录的点：
