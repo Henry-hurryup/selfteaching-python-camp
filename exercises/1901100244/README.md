@@ -1009,21 +1009,192 @@ else:
 
 #### 4.4 推导式
 
-生成列表的时候可以使用循环，如：
+生成列表的时候可以使用循环，也可以使用“列表推导式”（list comprehensions）。
+
+列表推导式的基本语法是：
+
+```Python
+new_list = [expression(i) for i in old_list if condition]
+```
+
+其等价循环形式为：
+
+```Python
+new_list = []
+for i in old_list:
+    if condition:
+        new_list.append(expression(i))
+```
+
+举个例子，生成 10 以内正整数的平方数。
+
+使用循环：
+
+```Python
+square_num = []
+for n in range(1, 10):
+    square_num.append(n**2)
+```
+
+使用列表推导式：
+
+```Python
+square_num = [n**2 for n in range(1, 10)]
+```
+
+再举个例子，去掉列表里含有字母“i”的单词。
+
+使用循环：
 
 ```Python
 text = ['Life', 'is', 'short', 'you', 'need', 'Python', 'by', 'Bruce', 'Eckel']
 text2 = []
 for w in text:
-    if w.find('i') < 0:
+    if 'i' not in w:
         text2.append(w)
 ```
 
-也可以使用“列表推导式”（list comprehensions），上面的代码用列表推导式的话可以写成：
+使用列表推导式：
 
 ```Python
 text = ['Life', 'is', 'short', 'you', 'need', 'Python', 'by', 'Bruce', 'Eckel']
-text2 = [w for w in text if w.find('i') < 0]
+text2 = [w for w in text if 'i' not in w]
+```
+
+多个条件也是可以的，比如去掉列表里含有字母“i”或“o”的单词。
+
+使用循环：
+
+```Python
+text = ['Life', 'is', 'short', 'you', 'need', 'Python', 'by', 'Bruce', 'Eckel']
+text2 = []
+for w in text:
+    if 'i' not in w:
+        if 'o' not in w:
+            text2.append(w)
+```
+
+使用列表推导式：
+
+```Python
+text = ['Life', 'is', 'short', 'you', 'need', 'Python', 'by', 'Bruce', 'Eckel']
+text2 = [w for w in text if 'i' not in w if 'o' not in w]
+```
+
+列表推导式还可以嵌套，其语法为：
+
+```Python
+[expression for a in A [if condition1 if condition2]
+            for b in B [if condition]
+            ...
+            for n in N [if condition]]
+```
+
+举例来说，在 1、3 中取一个数，再在 4、6 中取一个数，生成两两组合的数对列表。
+
+使用循环：
+
+```Python
+coordinate = []
+for x in range(1, 4):
+    if x != 2:
+        for y in range(4, 7):
+            if y != 5:
+                coordinate.append((x, y))
+```
+
+使用列表推导式：
+
+```Python
+coordinate = [(x, y) for x in range(1, 4) if x != 2 for y in range(4, 7) if y != 5]
+```
+
+也可以交换一下顺序——
+
+使用循环：
+
+```Python
+coordinate = []
+for x in range(1, 4):
+    for y in range(4, 7):
+        if x != 2:
+            if y != 5:
+                coordinate.append((x, y))
+```
+
+使用列表推导式：
+
+```Python
+coordinate = [(x, y) for x in range(1, 4) for y in range(4, 7) if x != 2 if y != 5]
+```
+
+很明显，和循环比，列表推导式相对简练，通常情况下，其书写顺序和循环顺序一致。
+
+值得注意的一点是，列表推导式只能从零生成一个列表，不能在已有列表上追加新的内容，如果要追加的话，需要使用“`+`”。
+
+举例说，实现：
+
+```Python
+coordinate = [(0, 1), (1, 2)]
+for x in range(1, 4):
+    for y in range(4, 7):
+        if x != 2:
+            if y != 5:
+                coordinate.append((x, y))
+```
+
+需要使用：
+
+```Python
+coordinate = [(0, 1), (1, 2)]
+coordinate = coordinate + [(x, y) for x in range(1, 4) for y in range(4, 7) if x != 2 if y != 5]
+```
+
+由于列表推导式中的表达式部分（`expression`）可以是任何内容，所以列表推导式还可以多层嵌套，也就是说，可以写成：
+
+```Python
+[[expression for b in B [if condition]]
+             for a in A [if condition]]
+```
+
+这种结构就比较复杂了，比如说可以把九九乘法表的每一行单独存成一个列表，再把各行的列表当作独立元素存成一个列表：
+
+```Python
+multi_table = [["{0}×{1}={2}".format(j, i, j*i)
+               for j in range(1, 10) if j <= i]
+               for i in range(1, 10)]
+```
+
+其等价于：
+
+```Python
+multi_table = []
+for i in range(1, 10):
+    multi_table_row = []
+    for j in range(1, 10):
+        if j <= i:
+            multi_table_row.append("{0}×{1}={2}".format(j, i, j*i))
+    multi_table.append(multi_table_row)
+```
+
+由于是列表套列表，此时的列表生成式和对应的循环语句视觉顺序并不一致，要先写最后运行的循环，再写倒数第二个循环，这样倒着写上去。
+
+生成的这个嵌套列表，如果需要打印，可以用循环的方式：
+
+```Python
+multi_table = [["{0}×{1}={2}".format(j, i, j*i)
+               for j in range(1, 10) if j <= i]
+               for i in range(1, 10)]
+for x in multi_table:
+    for y in x:
+        print(y, end='\t')
+    print()
+```
+
+配合 `join()`，甚至可以只用一条语句打印九九乘法表：
+
+```Python
+print('\n'.join(['\t'.join(["{0}×{1}={2}".format(j, i, j*i) for j in range(1, 10) if j <= i]) for i in range(1, 10)]))
 ```
 
 #### 4.5 字典的统计和排序
