@@ -1194,7 +1194,8 @@ for x in multi_table:
 配合 `join()`，甚至可以只用一条语句打印九九乘法表：
 
 ```Python
-print('\n'.join(['\t'.join(["{0}×{1}={2}".format(j, i, j*i) for j in range(1, 10) if j <= i]) for i in range(1, 10)]))
+print('\n'.join(['\t'.join(["{0}×{1}={2}".format(j, i, j*i)
+      for j in range(1, 10) if j <= i]) for i in range(1, 10)]))
 ```
 
 #### 4.5 字典的统计和排序
