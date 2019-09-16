@@ -260,7 +260,7 @@ GitHub 的基本使用
 
 ### 3. 收获总结
 
-1. 明确了使用 Git 和 GitHub 的目的——Git 用于版本控制，GitHub 用于网络协作；
+1. 明确了使用 Git 和 GitHub 的目的—— Git 用于版本控制，GitHub 用于网络协作；
 2. 掌握了拉取请求（Pull Request）相关的操作；
 3. 了解了 GitHub 的工作流程。
 
@@ -300,7 +300,7 @@ Issue 的位置与“参考资料2”中的截图不一致，应是 GitHub 改�
 #### 4.7 “任务5.3 通过 Github Desktop 将自己账户下 fork 的作业仓库 clone 到本地电脑”
 
 1. 这一步耗时甚久，大约 180 MB 的文件，下载速度只有 10~20 KB/s，前后花了约两个小时，手册应该对这种情况予以提醒；
-2. Google 了一下，知道了出现这种情况的实际原因—— GitHub 相关的一些域名被限制了（如 <http://github.global.ssl.fastly.net>）；
+2. Google 了一下，知道了出现这种情况的实际原因—— GitHub 相关的一些域名被限制了（如 <http://github.global.ssl.fastly.net>）；
 3. 不同人给了不同的解决方案，如：改 hosts，利用开源中国提供的代码仓库（码云 Gitee）转移，给 GitHub Desktop 设置代理；
 4. 个人认为相对彻底的解决方案应该是 GitHub Desktop 整体走代理，方法有两种，一是开 VPN，二是配置 GitHub Desktop；
 5. 考虑眼下的实际情况，VPN 不算靠谱，所以就只能配置 GitHub Desktop 了，试验发现，GitHub Desktop 不从系统设置中取代理服务器，用修改配置文件的方法才能设置代理
@@ -345,9 +345,16 @@ Git、GitHub、GitHub Desktop 之间的关系很容易让人糊涂，在这里�
 
 Git 是一个分布式版本控制软件，其目的是用于跟踪文件的修改过程，解决文件时间久远、多次修改之后难以明确文件状况的问题。
 
-GitHub 是一个远程文件仓库，也是一个开源协作社区，其目的一是为文件提供远程跟踪和备份，二是为公众参与开源项目提供一个方便的平台。
+GitHub 是一个远程文件托管平台，也是一个开源协作社区，其目的一是为文件提供远程跟踪和备份，二是为公众参与开源项目提供一个便捷的平台。
 
-GitHub Desktop 是 GitHub 开发的 Git 客户端
+GitHub Desktop 是 GitHub 开发的 Git 客户端，其目的是降低 Git 和在线协作的使用门槛。
+
+所以要利用 GitHub 进行学习或者开发，安装 GitHub Desktop 并掌握其常见功能应该是比较简单的途径了，将来如果要和其他的仓库或平台进行协作，再研究 Git 也来得及。
+
+参见：
+[《Git教程》](https://www.liaoxuefeng.com/wiki/896043488029600)，[廖雪峰](https://www.liaoxuefeng.com/)著  
+[《精通 Git（第2版）》](https://git-scm.com/book/zh/v2)（[*Pro Git 2nd Edition*](https://git-scm.com/book/en/v2)），[美] 斯科特·查康（Scott Chacon），[美] 本·斯特劳布（Ben Straub）著；门佳，刘梓懿译  
+[Git 可视化极简易教程—— Git GUI 使用方法](https://www.runoob.com/w3cnote/git-gui-window.html)
 
 #### 总结
 
@@ -402,7 +409,7 @@ PATH 指的是“环境变量”，很多人都没听说过这个东西，所以
 
 设置环境变量的目的，是让某个位置的程序在任何位置都能运行。
 
-举例来说，装好 Anaconda3 后，随带的 Python 所在的路径是 <code>C:\Users\\<<em>UserName</em>>\\Anaconda3\python.exe</code>，在没有设置环境变量的情况下，Python 只能在这个文件夹下运行，在其他位置运行——比如 GitHub Desktop 管理的 `hello-world` 文件夹 <code>C:\Users\\<<em>UserName</em>>\\Documents\GitHub\hello-world\\</code> ——的时候，需要输入完整的路径才可以。也就是说，运行一下“Hello, World!”程序，就需要在其所在的文件夹输入这样的指令：
+举例来说，装好 Anaconda3 后，随带的 Python 所在的路径是 <code>C:\Users\\<<em>UserName</em>>\\Anaconda3\python.exe</code>，在没有设置环境变量的情况下，Python 只能在这个文件夹下运行，在其他位置运行——比如 GitHub Desktop 管理的 `hello-world` 文件夹 <code>C:\Users\\<<em>UserName</em>>\\Documents\GitHub\hello-world\\</code> ——的时候，需要输入完整的路径才可以。也就是说，运行一下“Hello, World!”程序，就需要在其所在的文件夹输入这样的指令：
 <pre>
 <code>C:\Users\<<em>UserName</em>>\Anaconda3\python.exe hello-world.py</code>
 </pre>
@@ -683,7 +690,7 @@ Jupyter 从 IPython 衍生而来，现在的名字来源于其支持的核心编
 1. 对 Python 可实现的功能大致有了些了解；
 2. 明白了 Python 编程的基本格式要求；
 3. 了解了获取键盘输入信息的方法；
-4. 了解了定义函数的方法；
+4. 知道了定义函数的方法；
 5. 了解了用 if...elif...else 函数控制流程的方法；
 6. 知道了用 while 函数控制流程的方法；
 7. 知道了 print 函数格式化的方法；
