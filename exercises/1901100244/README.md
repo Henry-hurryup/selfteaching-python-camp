@@ -540,7 +540,7 @@ webbrowser.register('Kinza', None, webbrowser.GenericBrowser(r'C:\Users\<UserNam
 c.NotebookApp.browser = 'Kinza'
 ```
 
-其中`'Kinza'`是浏览器的名字，`'C:\Users\<UserName>\AppData\Local\Kinza\Application\kinza.exe'`是浏览器可执行文件的位置，注意前面有一个 `r` 字符，表示后面的字符串不转义。很多文档不用 `r` 而用 `u`，实践证明，如果路径是全英文的，那还是用 `r` 比较好，用 `u` 可能会报错。
+其中`'Kinza'`是浏览器的名字，`'C:\Users\<UserName>\AppData\Local\Kinza\Application\kinza.exe'`是浏览器可执行文件的位置，注意前面有一个 `r` 字符，表示后面的字符串不转义。很多文档不用 `r` 而用 `u`，这其实是个历史遗留问题—— Python 2.x 中的字符串默认使用 8 位 ASCII 码进行存储，如果要使用中文等字符，就需要使用 Unicode 字符串，`u` 就是用来标记 Unicode 字符串的。由于 Python 3.x 中所有的字符串都是 Unicode 字符串，所以 `u` 标记已经失去效用了。这里为了避免字符串转义，用 `r` 即可，用 `u` 可能会报错。
 
 第3项用于设置 JupyterLab 可访问的根目录，如果 JupyterLab 是从 Anaconda Navigator 启动的话，这一目录实际上是 `.jupyter` 文件夹所在的位置，这就又平添了几分麻烦。  
 我所用的一台计算机，配置的是固态硬盘+机械硬盘，我根据日常的习惯，把系统装在了固态硬盘（盘符为 `C`）上，又把账户下的默认文件夹（桌面、文档、图片、视频、音乐、下载等）移动到了机械硬盘（盘符为 `D`）上。这一设置导致 Anaconda 和 GitHub 文件夹默认都装在了 D 盘，而 `.jupyter` 文件夹默认在 C 盘生成，JupyterLab 启动之后看不到 GitHub 文件夹。  
