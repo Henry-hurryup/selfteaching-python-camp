@@ -61,6 +61,8 @@ iOS 可以在 App Store 里搜“[Outline App](https://apps.apple.com/app/outlin
 
 除了 Shadowsocks 外，还有不少其他的工具和方案可选。比如说我知道某位大佬使用 [Google Fi](https://fi.google.com/about) 来实现稳定访问全球互联网，不过这服务相当贵，一个月起价 \$20.00，只有 6 GB 的流量，超出之后 \$10.00/GB，最少计费单位 \$1.00 （我研究之后感觉大佬就是大佬，还是要学习一个，要努力提升自己），这种费用实在是不易落地；再比如我知道还有很多人在用 VPN，但 VPN 是全局的，启用后所有的网络连接全走 VPN 通道算流量，用起来不够灵活，还有，因为 VPN 连接特征鲜明，很容易被识别阻断，所以有些时候连接会不稳定；还有购买 VPS 然后用 SSH -D 转发流量的方案，但和 VPN 一样，因为其连接特征鲜明，很容易被识别阻断，根本不能稳定使用。综合考虑，我现在选择了 Shadowsocks。
 
+## 五、搭配需谨慎
+
 用 Shadowsocks 就会遇到选择服务商的问题，好在有位前辈专门做了相关的评测⸺毒药机场简介（<https://duyaoss.com/>，备用 GitHub 链接为 <https://github.com/DuyaoSS/SSR/issues/1>）。
 
 在具体挑选哪家服务商这点上，我现在的观点是这样的：
@@ -86,6 +88,8 @@ iOS 可以在 App Store 里搜“[Outline App](https://apps.apple.com/app/outlin
 （这些软件对上网有什么具体的影响，就不细说了。）
 
 有些人可能担心安全问题，其实 Windows 10 自带的 Defender 防护能力非常强，在 [2019 年 6 月的 AV-TEST 评测](https://www.av-test.org/en/antivirus/home-windows/)上，Defender 已经成为“顶级产品”了，所以一般使用是不必另外安装安全软件的。
+
+------
 
 参考资料：  
 [科学上网相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
