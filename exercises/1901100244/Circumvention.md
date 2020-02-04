@@ -31,7 +31,7 @@
 
 还有一种情况，是要在非中国大陆地区用[优酷](https://www.youku.com/)、[爱奇艺](https://www.iqiyi.com/)、[网易云音乐](https://music.163.com/)之类服务的，需要服务商有“回国线路”才可以。
 
-在各类特性的组合中，价格便宜流量多的那种服务往往比较鸡肋，简单地说——流量是多，可要是龟速，怎么用得完呢？
+在各类特性的组合中，价格便宜流量多的那种服务往往比较鸡肋，简单地说⸺流量是多，可要是龟速，怎么用得完呢？
 
 ## 三、场景需明确
 
@@ -61,7 +61,7 @@ iOS 可以在 App Store 里搜“[Outline App](https://apps.apple.com/app/outlin
 
 除了 Shadowsocks 外，还有不少其他的工具和方案可选。比如说我知道某位大佬使用 [Google Fi](https://fi.google.com/about) 来实现稳定访问全球互联网，不过这服务相当贵，一个月起价 \$20.00，只有 6 GB 的流量，超出之后 \$10.00/GB，最少计费单位 \$1.00 （我研究之后感觉大佬就是大佬，还是要学习一个，要努力提升自己），这种费用实在是不易落地；再比如我知道还有很多人在用 VPN，但 VPN 是全局的，启用后所有的网络连接全走 VPN 通道算流量，用起来不够灵活，还有，因为 VPN 连接特征鲜明，很容易被识别阻断，所以有些时候连接会不稳定；还有购买 VPS 然后用 SSH -D 转发流量的方案，但和 VPN 一样，因为其连接特征鲜明，很容易被识别阻断，根本不能稳定使用。综合考虑，我现在选择了 Shadowsocks。
 
-用 Shadowsocks 就会遇到选择服务商的问题，好在有位前辈专门做了相关的评测——毒药机场简介（<https://duyaoss.com/>，备用 GitHub 链接为 <https://github.com/DuyaoSS/SSR/issues/1>）。
+用 Shadowsocks 就会遇到选择服务商的问题，好在有位前辈专门做了相关的评测⸺毒药机场简介（<https://duyaoss.com/>，备用 GitHub 链接为 <https://github.com/DuyaoSS/SSR/issues/1>）。
 
 在具体挑选哪家服务商这点上，我现在的观点是这样的：
 
@@ -90,6 +90,8 @@ iOS 可以在 App Store 里搜“[Outline App](https://apps.apple.com/app/outlin
 参考资料：  
 [科学上网相关知识总结](https://crifan.github.io/scientific_network_summary/website/)  
 [机场简介](https://github.com/DuyaoSS/SSR/issues/1)  
+[不要使用 VPN 服务（Don't use VPN services.）](https://gist.github.com/joepie91/5a9909939e6ce7d09e29)  
+[VPN ⸺ 非常不可靠的叙事（VPN ⸺ a Very Precarious Narrative）](https://schub.wtf/blog/2019/04/08/very-precarious-narrative.html)  
 [Google 百度和谷歌的那些事](http://blog.devep.net/virushuo/2010/01/14/blog56google_blogtinyfool_1_go.html)  
 [百度云安全让史上最强 DDoS 攻击消于无形](http://it.people.com.cn/n/2015/1026/c1009-27741637.html)[](~（中国新闻网的这篇稿有高级黑的感觉）)  
 [谷歌 Play 商店允许中国开发者销售付费应用](http://game.people.com.cn/n/2014/1212/c48662-26194242.html)  
